@@ -70,15 +70,15 @@ flowchart LR
 
 ## GitHub Performance
 <p align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Luseefor&theme=github_dark&cb=20260223" alt="GitHub profile details card" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Luseefor&theme=github_dark&cb=20260224" alt="GitHub profile details card" />
 </p>
 <table width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%">
-      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Luseefor&theme=github_dark&utcOffset=5.75&cb=20260223" alt="Productive time card" />
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Luseefor&theme=github_dark&utcOffset=5.75&cb=20260224" alt="Productive time card" />
     </td>
     <td width="50%">
-      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Luseefor&theme=github_dark&cb=20260223" alt="Repos per language card" />
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Luseefor&theme=github_dark&cb=20260224" alt="Repos per language card" />
     </td>
   </tr>
 </table>
