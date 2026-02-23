@@ -10,10 +10,10 @@
   <a href="https://github.com/Luseefor">
     <img src="https://img.shields.io/badge/GitHub-Luseefor-1B2538?style=flat-square&logo=github&logoColor=8CC7FF&labelColor=0D1117" alt="GitHub profile link" />
   </a>
-  <a href="https://www.linkedin.com/in/luseefor">
+  <a href="https://www.linkedin.com/in/rijan-ghimire-37ba4a2b0/">
     <img src="https://img.shields.io/badge/LinkedIn-Luseefor-1B2538?style=flat-square&logo=linkedin&logoColor=8CC7FF&labelColor=0D1117" alt="LinkedIn profile link" />
   </a>
-  <a href="https://www.instagram.com/luseefor">
+  <a href="https://www.instagram.com/luseefor_">
     <img src="https://img.shields.io/badge/Instagram-Luseefor-1B2538?style=flat-square&logo=instagram&logoColor=8CC7FF&labelColor=0D1117" alt="Instagram profile link" />
   </a>
   <a href="https://rijan.sh">
