@@ -53,6 +53,8 @@ I am **Luseefor**, a founder-minded engineer focused on shipping durable product
 </table>
 
 ## Contribution Snake
-<p>
-  <img width="100%" src="./dist/github-contribution-grid-snake-dark.svg" alt="Premium contribution snake with month, weekday, and year labels" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arpan404/arpan404/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arpan404/arpan404/output/github-snake.svg" />
+  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/arpan404/arpan404/output/github-snake.svg" />
+</picture>
