@@ -4,57 +4,56 @@
 
 <h1 align="center">Luseefor</h1>
 <p align="center"><strong>Founder Engineer</strong></p>
-<p align="center">Building premium developer products with speed, clarity, and reliability.</p>
+<p align="center">Designing and shipping AI-native products with production-grade reliability.</p>
 
 <p align="center">
   <a href="https://github.com/Luseefor">
-    <img src="https://img.shields.io/badge/GitHub-Luseefor-FF2BD6?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" alt="GitHub social badge" />
+    <img src="https://img.shields.io/badge/GitHub-Luseefor-161B22?style=flat-square&logo=github&logoColor=C9D1D9&labelColor=0D1117" alt="GitHub profile link" />
   </a>
   <a href="https://rijan.sh">
-    <img src="https://img.shields.io/badge/Portfolio-rijan.sh-00B8D9?style=for-the-badge&logo=googlechrome&logoColor=0D1117&labelColor=0D1117" alt="Portfolio social badge" />
+    <img src="https://img.shields.io/badge/Portfolio-rijan.sh-161B22?style=flat-square&logo=googlechrome&logoColor=C9D1D9&labelColor=0D1117" alt="Portfolio link" />
   </a>
   <a href="mailto:ghimirerijan199@gmail.com">
-    <img src="https://img.shields.io/badge/Email-ghimirerijan199%40gmail.com-FFD166?style=for-the-badge&logo=gmail&logoColor=0D1117&labelColor=0D1117" alt="Email social badge" />
+    <img src="https://img.shields.io/badge/Email-ghimirerijan199%40gmail.com-161B22?style=flat-square&logo=gmail&logoColor=C9D1D9&labelColor=0D1117" alt="Email link" />
   </a>
 </p>
 
 ## About
-<p align="center">
-  <img width="100%" src="https://img.shields.io/badge/Founder--Minded%20Engineer-Shipping%20high--performance%20products-FF2BD6?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" alt="About headline badge" />
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Core%20Domain-AI--native%20product%20engineering-00B8D9?style=for-the-badge&labelColor=0D1117" alt="Core domain badge" />
-  <img src="https://img.shields.io/badge/Product%20Systems-Web%20platforms%20and%20developer%20UX-FFD166?style=for-the-badge&labelColor=0D1117&color=FFD166&logoColor=0D1117" alt="Product systems badge" />
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform%20Leverage-Automation%2C%20CI%2FCD%2C%20scalable%20infra-FF2BD6?style=for-the-badge&labelColor=0D1117" alt="Platform leverage badge" />
-  <img src="https://img.shields.io/badge/Location-Remote-00B8D9?style=for-the-badge&labelColor=0D1117" alt="Location badge" />
-</p>
+I build product systems that move fast without breaking at scale. My work combines founder-level ownership, pragmatic architecture, and developer-first execution.
 
-## Core Expertise
-<table width="100%" cellspacing="0" cellpadding="0">
-  <tr>
-    <td width="33%">
-      <img width="100%" src="https://img.shields.io/badge/0→1%20Ownership-Product%20engineering%20with%20clear%20technical%20direction-FF2BD6?style=for-the-badge&labelColor=0D1117" alt="Ownership expertise card" />
-    </td>
-    <td width="33%">
-      <img width="100%" src="https://img.shields.io/badge/Platform%20Strategy-Reliability%2C%20speed%2C%20developer%20efficiency-00B8D9?style=for-the-badge&labelColor=0D1117" alt="Platform strategy expertise card" />
-    </td>
-    <td width="33%">
-      <img width="100%" src="https://img.shields.io/badge/Architecture-Performance%20%2B%20maintainability%20%2B%20velocity-FFD166?style=for-the-badge&labelColor=0D1117&color=FFD166&logoColor=0D1117" alt="Architecture expertise card" />
-    </td>
-  </tr>
-</table>
+| Focus | Direction |
+| --- | --- |
+| Product | `AI-native features that solve real workflow problems` |
+| Platform | `Scalable backend foundations with reliable delivery` |
+| Developer Experience | `Tooling and interfaces that reduce friction for teams` |
+| Base | `Remote` |
 
-## Selected Stack
-<p align="center">
-  <img src="https://img.shields.io/badge/Languages-TypeScript%20%7C%20Python%20%7C%20SQL-FF2BD6?style=for-the-badge&labelColor=0D1117" alt="Languages stack badge" />
-  <img src="https://img.shields.io/badge/Runtime%20%26%20Infra-Node.js%20%7C%20Docker%20%7C%20PostgreSQL-00B8D9?style=for-the-badge&labelColor=0D1117" alt="Runtime and infra badge" />
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Delivery-GitHub%20Actions%20%7C%20Vercel%20%7C%20Observability-FFD166?style=for-the-badge&labelColor=0D1117&color=FFD166&logoColor=0D1117" alt="Delivery stack badge" />
-  <img src="https://img.shields.io/badge/Principles-clarity%20%7C%20fast%20iteration%20%7C%20resilience-FF2BD6?style=for-the-badge&labelColor=0D1117" alt="Engineering principles badge" />
-</p>
+## Core Experience
+| Capability | What It Delivers |
+| --- | --- |
+| `0->1 Delivery` | MVP to production with clean ownership and clear milestones |
+| `Platform Strategy` | Faster releases, stronger reliability, and safer operations |
+| `System Architecture` | Maintainable services that scale with product demand |
+| `Engineering Leadership` | High-trust execution across product and infrastructure workstreams |
+
+## Selected Stack (System View)
+```mermaid
+flowchart LR
+    Product["Product Experience"] --> Services["Service Layer (TypeScript / Python)"]
+    Services --> Data["Data Layer (PostgreSQL / SQL)"]
+    Services --> Runtime["Runtime (Node.js)"]
+    Runtime --> Container["Containerization (Docker)"]
+    Container --> CI["CI/CD (GitHub Actions)"]
+    CI --> Deploy["Deployment (Vercel)"]
+    CI --> Observe["Observability (Logs / Metrics / Traces)"]
+```
+
+| Layer | Stack |
+| --- | --- |
+| Core Languages | `TypeScript`, `Python`, `SQL` |
+| Runtime and Infra | `Node.js`, `Docker`, `PostgreSQL` |
+| Delivery and Operations | `GitHub Actions`, `Vercel`, `Observability workflows` |
+| Engineering Priorities | `Clarity`, `Fast iteration`, `Reliability`, `Maintainability` |
 
 ## GitHub Performance
 <p align="center">
@@ -70,8 +69,9 @@
     </td>
   </tr>
 </table>
+<p align="center"><sub>These cards refresh daily at midnight Nepal Time.</sub></p>
 
-## Persistency
+## Contribution Snake
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake.svg" />
