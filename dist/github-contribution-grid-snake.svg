@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="180" viewBox="0 0 980 180" role="img" aria-labelledby="t d">
+  <title id="t">Contribution Snake Placeholder</title>
+  <desc id="d">Placeholder shown until GitHub Action generates the real contribution snake.</desc>
+  <rect width="980" height="180" fill="#F6F8FA" rx="12"/>
+  <text x="32" y="84" fill="#1F8B4C" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="22">Contribution snake will appear after first workflow run.</text>
+  <text x="32" y="120" fill="#007D9C" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16">Run Actions → Generate Contribution Snake → Run workflow</text>
+</svg>
