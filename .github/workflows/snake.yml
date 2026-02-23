@@ -20,8 +20,8 @@ jobs:
         with:
           github_user_name: Luseefor
           outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-light
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2358A6FF&color_dots=%230D1117,%23161B22,%2321262D,%232EA043,%2339D353
+            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=%23D1009C&color_dots=%23EBEDF0,%23CFF5F2,%239EEAE3,%23FFD98A,%23FF5CD6
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23FF2BD6&color_dots=%230D1117,%23161B22,%2300B8D9,%23FFD166,%23FF2BD6
 
       - name: Decorate snake assets with premium timeline frame
         run: |

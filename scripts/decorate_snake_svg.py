@@ -13,6 +13,9 @@ from pathlib import Path
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 WEEKDAYS = ["Mon", "Wed", "Fri", "Sun"]
+ACCENT_MAGENTA = "#FF2BD6"
+ACCENT_CYAN = "#00B8D9"
+ACCENT_YELLOW = "#FFD166"
 
 
 def extract_size(svg: str) -> tuple[int, int]:
@@ -42,7 +45,7 @@ def month_labels(width: int) -> str:
     for idx, name in enumerate(MONTHS):
         x = round(start_x + (idx * step), 2)
         labels.append(
-            f'<text x="{x}" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">{name}</text>'
+            f'<text x="{x}" y="28" fill="{ACCENT_CYAN}" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">{name}</text>'
         )
     return "\n    ".join(labels)
 
@@ -55,7 +58,7 @@ def weekday_labels() -> str:
     for idx, name in enumerate(WEEKDAYS):
         y = base_y + (idx * gap)
         labels.append(
-            f'<text x="{base_x}" y="{y}" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">{name}</text>'
+            f'<text x="{base_x}" y="{y}" fill="{ACCENT_YELLOW}" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">{name}</text>'
         )
     return "\n    ".join(labels)
 
@@ -72,8 +75,8 @@ def year_chips(canvas_width: int) -> str:
     for idx, year in enumerate(years):
         x = start_x + idx * (chip_w + gap)
         active = idx == len(years) - 1
-        fill = "#58A6FF" if active else "#161B22"
-        stroke = "#58A6FF" if active else "#30363D"
+        fill = ACCENT_MAGENTA if active else "#161B22"
+        stroke = ACCENT_MAGENTA if active else "#30363D"
         text = "#0D1117" if active else "#C9D1D9"
         out.append(
             f'<rect x="{x}" y="14" rx="11" width="{chip_w}" height="{chip_h}" fill="{fill}" stroke="{stroke}"/>'
@@ -100,8 +103,8 @@ def decorate(svg: str, force: bool = False) -> str:
   <title id="t">Premium Contribution Snake</title>
   <desc id="d">Contribution snake with month and weekday labels and year chips.</desc>
   <rect width="{canvas_w}" height="{canvas_h}" rx="18" fill="#0D1117"/>
-  <rect x="8" y="8" width="{canvas_w - 16}" height="{canvas_h - 16}" rx="14" fill="none" stroke="#30363D"/>
-  <text x="22" y="30" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="700">CONTRIBUTION TIMELINE</text>
+  <rect x="8" y="8" width="{canvas_w - 16}" height="{canvas_h - 16}" rx="14" fill="none" stroke="#313A4A"/>
+  <text x="22" y="30" fill="{ACCENT_MAGENTA}" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="700">CONTRIBUTION TIMELINE</text>
   {year_chips(canvas_w)}
   {month_labels(width)}
   {weekday_labels()}

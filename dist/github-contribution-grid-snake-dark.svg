@@ -2,33 +2,33 @@
   <title id="t">Premium Contribution Snake</title>
   <desc id="d">Contribution snake with month and weekday labels and year chips.</desc>
   <rect width="1120" height="290" rx="18" fill="#0D1117"/>
-  <rect x="8" y="8" width="1104" height="274" rx="14" fill="none" stroke="#30363D"/>
-  <text x="22" y="30" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="700">CONTRIBUTION TIMELINE</text>
+  <rect x="8" y="8" width="1104" height="274" rx="14" fill="none" stroke="#313A4A"/>
+  <text x="22" y="30" fill="#FF2BD6" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="700">CONTRIBUTION TIMELINE</text>
   <rect x="890" y="14" rx="11" width="60" height="22" fill="#161B22" stroke="#30363D"/>
     <text x="906" y="29" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" font-weight="700">2024</text>
     <rect x="960" y="14" rx="11" width="60" height="22" fill="#161B22" stroke="#30363D"/>
     <text x="976" y="29" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" font-weight="700">2025</text>
-    <rect x="1030" y="14" rx="11" width="60" height="22" fill="#58A6FF" stroke="#58A6FF"/>
+    <rect x="1030" y="14" rx="11" width="60" height="22" fill="#FF2BD6" stroke="#FF2BD6"/>
     <text x="1046" y="29" fill="#0D1117" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" font-weight="700">2026</text>
-  <text x="110.0" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Jan</text>
-    <text x="184.55" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Feb</text>
-    <text x="259.09" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Mar</text>
-    <text x="333.64" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Apr</text>
-    <text x="408.18" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">May</text>
-    <text x="482.73" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Jun</text>
-    <text x="557.27" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Jul</text>
-    <text x="631.82" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Aug</text>
-    <text x="706.36" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Sep</text>
-    <text x="780.91" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Oct</text>
-    <text x="855.45" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Nov</text>
-    <text x="930.0" y="28" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Dec</text>
-  <text x="22" y="95" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Mon</text>
-    <text x="22" y="129" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Wed</text>
-    <text x="22" y="163" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Fri</text>
-    <text x="22" y="197" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Sun</text>
+  <text x="110.0" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Jan</text>
+    <text x="184.55" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Feb</text>
+    <text x="259.09" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Mar</text>
+    <text x="333.64" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Apr</text>
+    <text x="408.18" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">May</text>
+    <text x="482.73" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Jun</text>
+    <text x="557.27" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Jul</text>
+    <text x="631.82" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Aug</text>
+    <text x="706.36" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Sep</text>
+    <text x="780.91" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Oct</text>
+    <text x="855.45" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Nov</text>
+    <text x="930.0" y="28" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Dec</text>
+  <text x="22" y="95" fill="#FFD166" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Mon</text>
+    <text x="22" y="129" fill="#FFD166" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Wed</text>
+    <text x="22" y="163" fill="#FFD166" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Fri</text>
+    <text x="22" y="197" fill="#FFD166" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">Sun</text>
   <g transform="translate(92, 52)">
     <rect width="980" height="180" fill="#0D1117" rx="12"/>
-  <text x="32" y="84" fill="#2EA043" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="22">Contribution snake will appear after the first workflow run.</text>
-  <text x="32" y="120" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16">Run Actions - Generate Contribution Snake - Run workflow</text>
+  <text x="32" y="84" fill="#FF2BD6" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="22">Contribution snake will appear after the first workflow run.</text>
+  <text x="32" y="120" fill="#00B8D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16">Run Actions - Generate Contribution Snake - Run workflow</text>
   </g>
 </svg>

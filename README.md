@@ -12,12 +12,12 @@
     <code>GitHub</code>
   </a>
   &nbsp;
-  <a href="https://github.com/Luseefor?tab=repositories">
+  <a href="https://rijan.sh">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Commons-logo.svg" alt="Portfolio icon from Wikimedia Commons" width="17" height="17" />
     <code>Portfolio</code>
   </a>
   &nbsp;
-  <a href="mailto:sapanakosansar18@gmail.com">
+  <a href="mailto:ghimirerijan199@gmail.com">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Mail icon from Wikimedia Commons" width="17" height="17" />
     <code>Mail</code>
   </a>
@@ -43,20 +43,33 @@ I am **Luseefor**, a founder-minded engineer focused on shipping durable product
 - Principles: product clarity, fast iteration loops, and resilient systems
 
 ## GitHub Performance
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=Luseefor&show_icons=true&hide_border=true&theme=transparent&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&ring_color=58A6FF&count_private=true&include_all_commits=true&cache_seconds=1800" alt="GitHub stats card" />
+<p align="center">
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Luseefor&theme=radical" alt="GitHub profile details card" />
 </p>
-<p>
-  <img src="https://streak-stats.demolab.com?user=Luseefor&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=58A6FF&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=C9D1D9&sideLabels=C9D1D9&dates=8B949E" alt="GitHub streak stats card" />
-</p>
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%">
+      <img width="100%" src="https://streak-stats.demolab.com?user=Luseefor&hide_border=true&background=0D1117&stroke=313A4A&ring=FF2BD6&fire=FF2BD6&currStreakNum=F5F5F5&sideNums=F5F5F5&currStreakLabel=F5F5F5&sideLabels=F5F5F5&dates=9BA3AF" alt="GitHub streak stats card" />
+    </td>
+    <td width="50%">
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Luseefor&theme=radical" alt="GitHub stats summary card" />
+    </td>
+  </tr>
+</table>
 
 ## Contribution Snake
 <p>
-  <img src="./dist/github-contribution-grid-snake-dark.svg" alt="Premium contribution snake with month, weekday, and year labels" />
+  <img width="100%" src="./dist/github-contribution-grid-snake-dark.svg" alt="Premium contribution snake with month, weekday, and year labels" />
 </p>
 
 ## Contact
 For product builds, platform advisory, and engineering collaborations:
 
-- Email: `sapanakosansar18@gmail.com`
-- Portfolio: `https://github.com/Luseefor?tab=repositories`
+<p align="center">
+  <a href="mailto:ghimirerijan199@gmail.com">
+    <img src="https://img.shields.io/badge/Email-ghimirerijan199%40gmail.com-FF2BD6?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email contact badge" />
+  </a>
+  <a href="https://rijan.sh">
+    <img src="https://img.shields.io/badge/Portfolio-rijan.sh-00B8D9?style=for-the-badge&logo=googlechrome&logoColor=0D1117&labelColor=0D1117" alt="Portfolio contact badge" />
+  </a>
+</p>
