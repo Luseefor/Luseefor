@@ -8,18 +8,26 @@
 
 <p align="center">
   <a href="https://github.com/Luseefor">
-    <img src="https://img.shields.io/badge/GitHub-Luseefor-161B22?style=flat-square&logo=github&logoColor=C9D1D9&labelColor=0D1117" alt="GitHub profile link" />
+    <img src="https://img.shields.io/badge/GitHub-Luseefor-1B2538?style=flat-square&logo=github&logoColor=8CC7FF&labelColor=0D1117" alt="GitHub profile link" />
+  </a>
+  <a href="https://www.linkedin.com/in/luseefor">
+    <img src="https://img.shields.io/badge/LinkedIn-Luseefor-1B2538?style=flat-square&logo=linkedin&logoColor=8CC7FF&labelColor=0D1117" alt="LinkedIn profile link" />
+  </a>
+  <a href="https://www.instagram.com/luseefor">
+    <img src="https://img.shields.io/badge/Instagram-Luseefor-1B2538?style=flat-square&logo=instagram&logoColor=8CC7FF&labelColor=0D1117" alt="Instagram profile link" />
   </a>
   <a href="https://rijan.sh">
-    <img src="https://img.shields.io/badge/Portfolio-rijan.sh-161B22?style=flat-square&logo=googlechrome&logoColor=C9D1D9&labelColor=0D1117" alt="Portfolio link" />
+    <img src="https://img.shields.io/badge/Portfolio-rijan.sh-1B2538?style=flat-square&logo=googlechrome&logoColor=8CC7FF&labelColor=0D1117" alt="Portfolio link" />
   </a>
   <a href="mailto:ghimirerijan199@gmail.com">
-    <img src="https://img.shields.io/badge/Email-ghimirerijan199%40gmail.com-161B22?style=flat-square&logo=gmail&logoColor=C9D1D9&labelColor=0D1117" alt="Email link" />
+    <img src="https://img.shields.io/badge/Email-ghimirerijan199%40gmail.com-1B2538?style=flat-square&logo=gmail&logoColor=8CC7FF&labelColor=0D1117" alt="Email link" />
   </a>
 </p>
 
 ## About
 I build product systems that move fast without breaking at scale. My work combines founder-level ownership, pragmatic architecture, and developer-first execution.
+
+<p align="left"><sub>Focused on durable systems, fast iteration loops, and measurable product impact.</sub></p>
 
 | Focus | Direction |
 | --- | --- |
@@ -39,13 +47,18 @@ I build product systems that move fast without breaking at scale. My work combin
 ## Selected Stack (System View)
 ```mermaid
 flowchart LR
-    Product["Product Experience"] --> Services["Service Layer (TypeScript / Python)"]
-    Services --> Data["Data Layer (PostgreSQL / SQL)"]
-    Services --> Runtime["Runtime (Node.js)"]
-    Runtime --> Container["Containerization (Docker)"]
-    Container --> CI["CI/CD (GitHub Actions)"]
-    CI --> Deploy["Deployment (Vercel)"]
-    CI --> Observe["Observability (Logs / Metrics / Traces)"]
+    Product["Product Experience"] --> Services["Service Layer<br/>TypeScript + Python"]
+    Services --> Data["Data Layer<br/>PostgreSQL + SQL"]
+    Services --> Runtime["Runtime<br/>Node.js"]
+    Runtime --> Container["Containerization<br/>Docker"]
+    Container --> CI["CI/CD<br/>GitHub Actions"]
+    CI --> Deploy["Deployment<br/>Vercel"]
+    CI --> Observe["Observability<br/>Logs + Metrics + Traces"]
+
+    classDef node fill:#111C2E,stroke:#2F4A68,color:#C9D1D9;
+    classDef root fill:#0D1117,stroke:#58A6FF,color:#C9D1D9;
+    class Product root;
+    class Services,Data,Runtime,Container,CI,Deploy,Observe node;
 ```
 
 | Layer | Stack |
@@ -57,15 +70,15 @@ flowchart LR
 
 ## GitHub Performance
 <p align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Luseefor&theme=radical&cb=20260223" alt="GitHub profile details card" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Luseefor&theme=github_dark&cb=20260223" alt="GitHub profile details card" />
 </p>
 <table width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%">
-      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Luseefor&theme=radical&utcOffset=5.75&cb=20260223" alt="Productive time card" />
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Luseefor&theme=github_dark&utcOffset=5.75&cb=20260223" alt="Productive time card" />
     </td>
     <td width="50%">
-      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Luseefor&theme=radical&cb=20260223" alt="Repos per language card" />
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Luseefor&theme=github_dark&cb=20260223" alt="Repos per language card" />
     </td>
   </tr>
 </table>
