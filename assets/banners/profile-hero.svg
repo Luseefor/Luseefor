@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none" role="img" aria-labelledby="title desc">
   <title id="title">Developer Profile Hero Banner</title>
-  <desc id="desc">Neovim and Go inspired premium banner with placeholder identity text.</desc>
+  <desc id="desc">Premium GitHub-dark developer banner with placeholder identity text.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#020617"/>
-      <stop offset="0.55" stop-color="#071226"/>
-      <stop offset="1" stop-color="#0B1F3A"/>
+      <stop stop-color="#0D1117"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#161B22"/>
     </linearGradient>
     <linearGradient id="accent" x1="60" y1="76" x2="420" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#3FB950"/>
-      <stop offset="1" stop-color="#00ADD8"/>
+      <stop stop-color="#2EA043"/>
+      <stop offset="1" stop-color="#58A6FF"/>
     </linearGradient>
     <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="18"/>
@@ -18,24 +18,24 @@
 
   <rect width="1200" height="320" fill="url(#bg)"/>
 
-  <circle cx="1030" cy="84" r="92" fill="#00ADD8" opacity="0.2" filter="url(#soft)"/>
-  <circle cx="210" cy="270" r="116" fill="#3FB950" opacity="0.18" filter="url(#soft)"/>
+  <circle cx="1030" cy="84" r="92" fill="#58A6FF" opacity="0.18" filter="url(#soft)"/>
+  <circle cx="210" cy="270" r="116" fill="#2EA043" opacity="0.16" filter="url(#soft)"/>
 
   <g opacity="0.6">
-    <rect x="56" y="56" width="332" height="208" rx="18" fill="#0F172A" stroke="#1E293B"/>
-    <rect x="82" y="86" width="284" height="20" rx="8" fill="#111827"/>
-    <rect x="82" y="118" width="244" height="12" rx="6" fill="#1F2937"/>
-    <rect x="82" y="138" width="196" height="12" rx="6" fill="#1F2937"/>
-    <rect x="82" y="176" width="264" height="58" rx="10" fill="#0B1220" stroke="#1E293B"/>
+    <rect x="56" y="56" width="332" height="208" rx="18" fill="#161B22" stroke="#30363D"/>
+    <rect x="82" y="86" width="284" height="20" rx="8" fill="#0D1117"/>
+    <rect x="82" y="118" width="244" height="12" rx="6" fill="#21262D"/>
+    <rect x="82" y="138" width="196" height="12" rx="6" fill="#21262D"/>
+    <rect x="82" y="176" width="264" height="58" rx="10" fill="#0D1117" stroke="#30363D"/>
   </g>
 
-  <path d="M660 68L780 130L660 192L540 130L660 68Z" fill="#00ADD8" opacity="0.18"/>
-  <path d="M640 92L740 130L640 168L540 130L640 92Z" fill="#3FB950" opacity="0.22"/>
+  <path d="M660 68L780 130L660 192L540 130L660 68Z" fill="#58A6FF" opacity="0.2"/>
+  <path d="M640 92L740 130L640 168L540 130L640 92Z" fill="#2EA043" opacity="0.22"/>
 
-  <text x="460" y="110" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16">nvim + go // builder profile</text>
-  <text x="460" y="158" fill="#F8FAFC" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="40" font-weight="700">{{YOUR_NAME}}</text>
-  <text x="460" y="202" fill="#A5B4FC" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="22">{{YOUR_TITLE}}</text>
+  <text x="460" y="110" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16">founder engineer // product systems</text>
+  <text x="460" y="158" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="40" font-weight="700">Luseefor</text>
+  <text x="460" y="202" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="22">Founder Engineer</text>
 
   <rect x="460" y="228" width="256" height="36" rx="10" fill="url(#accent)" opacity="0.9"/>
-  <text x="478" y="251" fill="#020617" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16" font-weight="700">{{YOUR_TAGLINE}}</text>
+  <text x="478" y="251" fill="#0D1117" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16" font-weight="700">build, ship, scale</text>
 </svg>

@@ -1,13 +1,13 @@
-# Snake Theme: Neovim + Go
+# Snake Theme: Graphite Pulse
 
-This profile uses a snake palette inspired by Neovim's dark UI and Go's signature cyan.
+This profile uses a premium GitHub-dark palette designed for high contrast and clean visual hierarchy.
 
 ## Palette
-- Snake head/body: `#00ADD8`
-- Empty cells: `#0B1220`
-- Activity levels: `#123026`, `#1F8B4C`, `#3FB950`, `#8BFF96`
+- Snake head/body: `#58A6FF`
+- Empty cells: `#0D1117`
+- Activity levels: `#0E4429`, `#006D32`, `#26A641`, `#39D353`
 
 ## Rationale
-- Deep slate/blue background keeps contrast high on GitHub dark mode.
-- Go cyan gives strong motion focus to the snake.
-- Green ladder mirrors contribution intensity naturally.
+- Background and text tones align with GitHub dark UI anchors.
+- Blue-green accents signal movement without neon oversaturation.
+- Contribution levels preserve clear visual progression at all densities.
