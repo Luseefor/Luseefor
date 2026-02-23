@@ -1,15 +1,15 @@
 name: Snake Animation
 
 on:
-  # Schedule the workflow to run daily at midnight UTC
+  # Daily at midnight Nepal Time (UTC+05:45)
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "15 18 * * *"
   # Allow manual triggering of the workflow
   workflow_dispatch:
-  # Trigger the workflow on pushes to the main branch
-  push:
-    branches:
-      - main
+
+concurrency:
+  group: snake-animation-daily
+  cancel-in-progress: true
 
 permissions:
   contents: write

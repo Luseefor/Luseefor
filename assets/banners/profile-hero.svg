@@ -1,83 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" fill="none" role="img" aria-labelledby="title desc">
   <title id="title">Luseefor profile hero banner</title>
-  <desc id="desc">Premium dark-mode hero with contained grid layout, telemetry panel, and systems motif.</desc>
+  <desc id="desc">Modern premium hero banner with a compact grid layout and balanced system visuals.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0B1321"/>
       <stop offset="0.5" stop-color="#0F1B30"/>
-      <stop offset="1" stop-color="#152133"/>
+      <stop offset="1" stop-color="#142033"/>
     </linearGradient>
-    <linearGradient id="chipBorder" x1="430" y1="250" x2="850" y2="250" gradientUnits="userSpaceOnUse">
+    <linearGradient id="panel" x1="20" y1="20" x2="1180" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E182A" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#0E1A2D" stop-opacity="0.74"/>
+    </linearGradient>
+    <linearGradient id="chipBorder" x1="404" y1="220" x2="834" y2="220" gradientUnits="userSpaceOnUse">
       <stop stop-color="#58A6FF"/>
       <stop offset="1" stop-color="#00B8D9"/>
     </linearGradient>
-    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 252) rotate(90) scale(120 210)">
-      <stop stop-color="#00B8D9" stop-opacity="0.2"/>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 236) rotate(90) scale(96 190)">
+      <stop stop-color="#00B8D9" stop-opacity="0.18"/>
       <stop offset="1" stop-color="#00B8D9" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(970 100) rotate(90) scale(110 165)">
-      <stop stop-color="#78A4EA" stop-opacity="0.25"/>
-      <stop offset="1" stop-color="#78A4EA" stop-opacity="0"/>
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 94) rotate(90) scale(90 150)">
+      <stop stop-color="#7CA9F0" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#7CA9F0" stop-opacity="0"/>
     </radialGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="16"/>
-    </filter>
     <clipPath id="panelClip">
-      <rect x="40" y="40" width="1120" height="240" rx="16"/>
+      <rect x="20" y="20" width="1160" height="240" rx="20"/>
     </clipPath>
   </defs>
 
-  <rect width="1200" height="320" fill="url(#bg)"/>
-  <rect x="24" y="24" width="1152" height="272" rx="22" fill="none" stroke="#2C3A50" opacity="0.5"/>
-  <rect x="40" y="40" width="1120" height="240" rx="16" fill="#0E1829" fill-opacity="0.56" stroke="#26374B"/>
+  <rect width="1200" height="280" fill="url(#bg)"/>
+  <rect x="20" y="20" width="1160" height="240" rx="20" fill="url(#panel)" stroke="#2C3D56" stroke-opacity="0.72"/>
 
   <g clip-path="url(#panelClip)">
-    <g opacity="0.16" stroke="#2A3A50">
-      <path d="M40 80H1160"/>
-      <path d="M40 120H1160"/>
-      <path d="M40 160H1160"/>
-      <path d="M40 200H1160"/>
-      <path d="M40 240H1160"/>
-      <path d="M120 40V280"/>
-      <path d="M220 40V280"/>
-      <path d="M320 40V280"/>
-      <path d="M420 40V280"/>
-      <path d="M520 40V280"/>
-      <path d="M620 40V280"/>
-      <path d="M720 40V280"/>
-      <path d="M820 40V280"/>
-      <path d="M920 40V280"/>
-      <path d="M1020 40V280"/>
+    <g opacity="0.14" stroke="#2D4059">
+      <path d="M20 58H1180"/>
+      <path d="M20 96H1180"/>
+      <path d="M20 134H1180"/>
+      <path d="M20 172H1180"/>
+      <path d="M20 210H1180"/>
+      <path d="M20 248H1180"/>
+      <path d="M102 20V260"/>
+      <path d="M202 20V260"/>
+      <path d="M302 20V260"/>
+      <path d="M402 20V260"/>
+      <path d="M502 20V260"/>
+      <path d="M602 20V260"/>
+      <path d="M702 20V260"/>
+      <path d="M802 20V260"/>
+      <path d="M902 20V260"/>
+      <path d="M1002 20V260"/>
+      <path d="M1102 20V260"/>
     </g>
-
-    <circle cx="190" cy="252" r="118" fill="url(#glowLeft)" filter="url(#soft)"/>
-    <circle cx="970" cy="100" r="108" fill="url(#glowRight)" filter="url(#soft)"/>
+    <circle cx="190" cy="236" r="98" fill="url(#glowLeft)"/>
+    <circle cx="980" cy="94" r="94" fill="url(#glowRight)"/>
   </g>
 
-  <rect x="72" y="70" width="318" height="180" rx="20" fill="#122036" stroke="#33465F"/>
-  <text x="98" y="102" fill="#8EA2BF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="12">SYSTEM TELEMETRY</text>
-  <rect x="96" y="116" width="270" height="30" rx="10" fill="#0A1423"/>
-  <rect x="96" y="160" width="236" height="11" rx="5.5" fill="#1A2940"/>
-  <rect x="96" y="178" width="182" height="11" rx="5.5" fill="#1A2940"/>
-  <rect x="96" y="200" width="270" height="42" rx="11" fill="#0A1423" stroke="#32465E"/>
-  <path d="M118 220L150 198L198 218L250 184L300 210L344 176" stroke="#58A6FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="344" cy="176" r="4.5" fill="#58A6FF"/>
+  <rect x="56" y="54" width="328" height="172" rx="24" fill="#13233A" stroke="#344A66"/>
+  <text x="86" y="88" fill="#91A6C2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">SYSTEM TELEMETRY</text>
+  <rect x="84" y="102" width="274" height="30" rx="10" fill="#0A1528"/>
+  <rect x="84" y="144" width="236" height="10" rx="5" fill="#1C2D45"/>
+  <rect x="84" y="162" width="190" height="10" rx="5" fill="#1C2D45"/>
+  <rect x="84" y="184" width="274" height="58" rx="12" fill="#0A1528" stroke="#32506F"/>
+  <path d="M112 210L158 180L204 200L250 166L296 190L342 160" stroke="#58A6FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="342" cy="160" r="5" fill="#58A6FF"/>
 
-  <text x="430" y="110" fill="#8EA2BF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="15">founder engineer // product systems</text>
-  <text x="430" y="164" fill="#DAE4F0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="56" font-weight="700">Luseefor</text>
-  <text x="430" y="206" fill="#86B8FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="21">Founder Engineer</text>
-  <rect x="430" y="222" width="420" height="38" rx="11" fill="#0D1727" stroke="url(#chipBorder)"/>
-  <text x="448" y="246" fill="#C7D6E8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">build fast . ship clean . scale reliably</text>
+  <text x="404" y="100" fill="#91A6C2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16">founder engineer // product systems</text>
+  <text x="404" y="152" fill="#DCE6F3" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="78" font-weight="700">Luseefor</text>
+  <text x="404" y="192" fill="#8AB8FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="20">Founder Engineer</text>
+  <rect x="404" y="204" width="430" height="38" rx="12" fill="#0D1729" stroke="url(#chipBorder)"/>
+  <text x="430" y="228" fill="#C8D7EA" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="15">build fast . ship clean . scale reliably</text>
 
-  <g opacity="0.86">
-    <circle cx="955" cy="162" r="58" stroke="#3B5475" stroke-width="2"/>
-    <circle cx="955" cy="162" r="36" stroke="#53759E" stroke-width="2"/>
-    <circle cx="955" cy="162" r="12" fill="#1A2A40" stroke="#6C93C2"/>
-    <circle cx="1040" cy="130" r="7.5" fill="#5FA8F4"/>
-    <circle cx="1068" cy="217" r="7.5" fill="#7AA2EA"/>
-    <circle cx="880" cy="228" r="7.5" fill="#22AFC8"/>
-    <path d="M955 162L1040 130" stroke="#4F6A8D"/>
-    <path d="M955 162L1068 217" stroke="#4F6A8D"/>
-    <path d="M955 162L880 228" stroke="#4F6A8D"/>
+  <g opacity="0.9">
+    <circle cx="980" cy="140" r="52" stroke="#3E5A7E" stroke-width="2.5"/>
+    <circle cx="980" cy="140" r="30" stroke="#5F83B0" stroke-width="2.5"/>
+    <circle cx="980" cy="140" r="9" fill="#17314C" stroke="#82A9D6"/>
+    <circle cx="1072" cy="106" r="7.5" fill="#58A6FF"/>
+    <circle cx="1094" cy="188" r="7.5" fill="#7EA8E6"/>
+    <circle cx="904" cy="210" r="7.5" fill="#27AFC9"/>
+    <path d="M980 140L1072 106" stroke="#56749A"/>
+    <path d="M980 140L1094 188" stroke="#56749A"/>
+    <path d="M980 140L904 210" stroke="#56749A"/>
   </g>
 </svg>
