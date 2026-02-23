@@ -15,8 +15,8 @@
       <stop stop-color="#58A6FF"/>
       <stop offset="1" stop-color="#00B8D9"/>
     </linearGradient>
-    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 236) rotate(90) scale(96 190)">
-      <stop stop-color="#00B8D9" stop-opacity="0.18"/>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 240) rotate(90) scale(86 180)">
+      <stop stop-color="#00B8D9" stop-opacity="0.12"/>
       <stop offset="1" stop-color="#00B8D9" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 94) rotate(90) scale(90 150)">
@@ -51,24 +51,23 @@
       <path d="M1002 20V260"/>
       <path d="M1102 20V260"/>
     </g>
-    <circle cx="190" cy="236" r="98" fill="url(#glowLeft)"/>
+    <circle cx="190" cy="240" r="80" fill="url(#glowLeft)"/>
     <circle cx="980" cy="94" r="94" fill="url(#glowRight)"/>
   </g>
 
   <rect x="56" y="54" width="328" height="172" rx="24" fill="#13233A" stroke="#344A66"/>
-  <text x="86" y="88" fill="#91A6C2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">SYSTEM TELEMETRY</text>
-  <rect x="84" y="102" width="274" height="30" rx="10" fill="#0A1528"/>
-  <rect x="84" y="144" width="236" height="10" rx="5" fill="#1C2D45"/>
-  <rect x="84" y="162" width="190" height="10" rx="5" fill="#1C2D45"/>
-  <rect x="84" y="184" width="274" height="58" rx="12" fill="#0A1528" stroke="#32506F"/>
-  <path d="M112 210L158 180L204 200L250 166L296 190L342 160" stroke="#58A6FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="342" cy="160" r="5" fill="#58A6FF"/>
+  <text x="86" y="84" fill="#91A6C2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">SYSTEM TELEMETRY</text>
+  <rect x="84" y="96" width="274" height="28" rx="10" fill="#0A1528"/>
+  <rect x="84" y="132" width="236" height="10" rx="5" fill="#1C2D45"/>
+  <rect x="84" y="148" width="190" height="10" rx="5" fill="#1C2D45"/>
+  <rect x="90" y="168" width="262" height="44" rx="14" fill="#0A1528" stroke="#32506F"/>
+  <path d="M116 206L156 186L198 200L240 176L282 192L320 172L338 182" stroke="#58A6FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="338" cy="182" r="4.5" fill="#58A6FF"/>
 
-  <text x="404" y="100" fill="#91A6C2" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="16">founder engineer // product systems</text>
-  <text x="404" y="152" fill="#DCE6F3" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="78" font-weight="700">Luseefor</text>
-  <text x="404" y="192" fill="#8AB8FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="20">Founder Engineer</text>
-  <rect x="404" y="204" width="430" height="38" rx="12" fill="#0D1729" stroke="url(#chipBorder)"/>
-  <text x="430" y="228" fill="#C8D7EA" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="15">build fast . ship clean . scale reliably</text>
+  <text x="404" y="156" fill="#DCE6F3" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="68" font-weight="700">Luseefor</text>
+  <text x="404" y="188" fill="#8AB8FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="20">Founder Engineer</text>
+  <rect x="404" y="198" width="430" height="36" rx="12" fill="#0D1729" stroke="url(#chipBorder)"/>
+  <text x="430" y="221" fill="#C8D7EA" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="15">build fast . ship clean . scale reliably</text>
 
   <g opacity="0.9">
     <circle cx="980" cy="140" r="52" stroke="#3E5A7E" stroke-width="2.5"/>
