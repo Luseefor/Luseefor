@@ -1,0 +1,31 @@
+name: Refresh GitHub Performance Cards
+
+on:
+  # Daily at midnight Nepal Time (UTC+05:45)
+  schedule:
+    - cron: "15 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile-stats
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Refresh README stats cache token
+        run: python3 scripts/refresh_readme_card_cache.py
+
+      - name: Commit README cache refresh
+        uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5
+        with:
+          commit_message: "chore: refresh GitHub performance cards cache token"
+          file_pattern: README.md
