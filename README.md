@@ -82,7 +82,6 @@ flowchart LR
     </td>
   </tr>
 </table>
-<p align="center"><sub>These cards refresh daily at midnight Nepal Time.</sub></p>
 
 ## Contribution Snake
 <picture>
