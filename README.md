@@ -13,7 +13,8 @@ Open to internships and early-career software engineering roles.
 **[vinculum](https://github.com/Luseefor/vinculum)** — Interactive 2D/3D math visualization for implicit surfaces, planes, and parametric curves.  
 [Live demo](https://vinculum.rijan.sh)
 
-**[Synthex UI](https://synthex-ui.rijan.sh)** — Component library, theme system, preview environment, and docs in one frontend systems build.
+**[Synthex UI](https://github.com/Luseefor/synthex-ui)** — Cross-platform component library and theme system, plus a framework-agnostic layout engine.  
+[Live demo](https://synthex-ui.rijan.sh)
 
 **[LumaWall](https://github.com/Luseefor/LumaWall)** — Live video wallpapers for macOS, from files already on your disk.
 
