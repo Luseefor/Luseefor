@@ -21,7 +21,7 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout repository
-        uses: actions/checkout@11bd5960a326750d5838078e36cf38b85af677262 # v4
+        uses: actions/checkout@11bd5960a326750d5838078e36cf38b85af67726 # v4
 
       # Step 2: Generate light and dark contribution snakes
       - name: Generate contribution snake
