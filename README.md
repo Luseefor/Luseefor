@@ -7,6 +7,8 @@
 <p align="center">AI systems, interactive tools, and native macOS apps.</p>
 <p align="center">Dual B.S. Computer Engineering and Mathematics · University of Southern Mississippi</p>
 
+<p align="center"><sub>Open to internships and early-career software engineering roles.</sub></p>
+
 <p align="center">
   <a href="https://github.com/Luseefor">
     <img src="https://img.shields.io/badge/GitHub-Luseefor-1B2538?style=flat-square&logo=github&logoColor=8CC7FF&labelColor=0D1117" alt="GitHub profile link" />
@@ -26,24 +28,14 @@
 </p>
 
 ## About
-I build product systems that move fast without breaking at scale. My work combines end-to-end ownership, pragmatic architecture, and developer-first execution.
+Hi, I'm Rijan. I'm a Computer Engineering and Mathematics student who writes software. Lately that's meant turning abstract math into explorable 2D/3D visualizations ([vinculum](https://github.com/Luseefor/vinculum)), building a cross-platform component system ([Synthex UI](https://github.com/Luseefor/synthex-ui)), and making macOS apps that stay out of your way ([LumaWall](https://github.com/Luseefor/LumaWall), [Automater](https://github.com/Luseefor/Automater)).
 
-<p align="left"><sub>Focused on durable systems, fast iteration loops, and measurable product impact.</sub></p>
+I care more about shipping something useful than chasing trends.
 
-| Focus | Direction |
-| --- | --- |
-| Product | `AI-native features that solve real workflow problems` |
-| Platform | `Scalable backend foundations with reliable delivery` |
-| Developer Experience | `Tooling and interfaces that reduce friction for teams` |
-| Base | `Remote` |
-
-## Core Experience
-| Capability | What It Delivers |
-| --- | --- |
-| `0->1 Delivery` | MVP to production with clean ownership and clear milestones |
-| `Platform Strategy` | Faster releases, stronger reliability, and safer operations |
-| `System Architecture` | Maintainable services that scale with product demand |
-| `Engineering Leadership` | High-trust execution across product and infrastructure workstreams |
+## Now
+- Finishing my dual B.S. in Computer Engineering and Mathematics at the University of Southern Mississippi.
+- Making [vinculum](https://vinculum.rijan.sh) easier for students to use for math and physics.
+- Looking for an internship where I can work on real products with real users.
 
 ## Selected Work
 
@@ -55,6 +47,22 @@ I build product systems that move fast without breaking at scale. My work combin
 | **[alove](https://github.com/Luseefor/alove)** | Web LaTeX workspace: Next.js editor, Docker TeX Live compile worker | [repo](https://github.com/Luseefor/alove) |
 | **[Automater](https://github.com/Luseefor/Automater)** | macOS desktop automation for clicking, macros, and recording | [repo](https://github.com/Luseefor/Automater) |
 | **[portfolio](https://github.com/Luseefor/portfolio)** | Personal site, including a WebGL dungeon demo | [rijan.sh](https://www.rijan.sh) |
+
+## Core Experience
+| Capability | What It Delivers |
+| --- | --- |
+| `0->1 Delivery` | MVP to production with clean ownership and clear milestones |
+| `Platform Strategy` | Faster releases, stronger reliability, and safer operations |
+| `System Architecture` | Maintainable services that scale with product demand |
+| `Engineering Leadership` | High-trust execution across product and infrastructure workstreams |
+
+## Focus
+| Area | Direction |
+| --- | --- |
+| Product | `AI-native features that solve real workflow problems` |
+| Platform | `Scalable backend foundations with reliable delivery` |
+| Developer Experience | `Tooling and interfaces that reduce friction for teams` |
+| Base | `Remote` |
 
 ## Selected Stack (System View)
 ```mermaid
@@ -101,3 +109,6 @@ flowchart LR
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake.svg" />
   <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake.svg" />
 </picture>
+
+## Let's talk
+If you're working on something interesting — or just want to chat about math visualization, macOS dev, or AI tooling — reach out at [contact@rijan.sh](mailto:contact@rijan.sh) or on [LinkedIn](https://www.linkedin.com/in/rijan-ghimire-37ba4a2b0/).
