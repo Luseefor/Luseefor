@@ -1,0 +1,61 @@
+name: Build Profile Assets
+
+on:
+  # Daily at midnight Nepal Time (UTC+05:45)
+  schedule:
+    - cron: "15 18 * * *"
+  # Allow manual triggering of the workflow
+  workflow_dispatch:
+
+concurrency:
+  group: build-profile-assets
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@11bd5960a326750d5838078e36cf38b85af677262 # v4
+
+      # Step 2: Generate light and dark contribution snakes
+      - name: Generate contribution snake
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?color_snake=#58A6FF&color_dots=#0D1117,#0E4429,#006D32,#26A641,#39D353
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 3: Generate GitHub profile summary cards as local SVG files
+      - name: Generate GitHub profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@d9632798b299e9ad6940449a859c30742eb5b549 # v0.12.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          UTC_OFFSET: 5.75
+          THEME: github_dark
+          AUTO_PUSH: false
+
+      # Step 4: Move generated cards into the deploy directory
+      - name: Stage summary cards
+        run: |
+          mkdir -p dist/cards
+          cp profile-summary-card-output/github_dark/*.svg dist/cards/
+
+      # Step 5: Deploy all generated assets to the 'output' branch
+      - name: Deploy assets to output branch
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          commit_message: "chore: refresh profile assets [skip ci]"
