@@ -1,22 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" fill="none" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none" role="img" aria-labelledby="title desc">
   <title id="title">Luseefor profile hero banner</title>
-  <desc id="desc">Minimal typographic hero banner for Luseefor — Software Engineer.</desc>
+  <desc id="desc">Terminal-styled hero banner for Luseefor — Software Engineer.</desc>
 
-  <!-- Base -->
-  <rect width="1200" height="280" fill="#0A1220"/>
+  <!-- Window background -->
+  <rect width="1200" height="300" rx="0" fill="#0D1117"/>
 
-  <!-- Top rule -->
-  <rect x="80" y="56" width="1040" height="1" fill="#152238"/>
+  <!-- Title bar -->
+  <rect width="1200" height="48" fill="#161B22"/>
+  <rect y="48" width="1200" height="1" fill="#30363D"/>
 
-  <!-- Accent bar -->
-  <rect x="80" y="76" width="3" height="128" rx="1.5" fill="#58A6FF"/>
+  <!-- Window controls -->
+  <circle cx="28" cy="24" r="6" fill="#FF5F56"/>
+  <circle cx="52" cy="24" r="6" fill="#FFBD2E"/>
+  <circle cx="76" cy="24" r="6" fill="#27C93F"/>
 
-  <!-- Wordmark -->
-  <text x="110" y="142" fill="#F0F5FA" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-0.04em">Luseefor</text>
+  <!-- Tab -->
+  <text x="108" y="29" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="500">README.md</text>
 
-  <!-- Role -->
-  <text x="112" y="178" fill="#7A9CC6" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="500" letter-spacing="0.02em">Software Engineer</text>
+  <!-- Content -->
+  <text x="64" y="120" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22" font-weight="500" letter-spacing="0.02em">// Luseefor</text>
+  <text x="64" y="162" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="400" letter-spacing="0.02em">// Software Engineer</text>
+  <text x="64" y="204" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="400" letter-spacing="0.02em">// Professionally making computers do weird things.</text>
 
-  <!-- Bottom rule -->
-  <rect x="80" y="223" width="1040" height="1" fill="#152238"/>
+  <!-- Prompt line -->
+  <text x="64" y="256" fill="#58A6FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="600">$</text>
+  <text x="84" y="256" fill="#C9D1D9" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="500">open rijan.sh</text>
+  <rect x="226" y="242" width="10" height="22" fill="#58A6FF">
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
 </svg>
