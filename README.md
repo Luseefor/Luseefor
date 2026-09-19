@@ -30,7 +30,7 @@
 ## About
 Hi, I'm Rijan. I'm a Computer Engineering and Mathematics student who writes software. Lately that's meant turning abstract math into explorable 2D/3D visualizations ([vinculum](https://github.com/Luseefor/vinculum)), building a cross-platform component system ([Synthex UI](https://github.com/Luseefor/synthex-ui)), and making macOS apps that stay out of your way ([LumaWall](https://github.com/Luseefor/LumaWall), [Automater](https://github.com/Luseefor/Automater)).
 
-I care more about shipping something useful than chasing trends.
+Hey nerds, I make computers do questionable things.
 
 ## Now
 - Finishing my dual B.S. in Computer Engineering and Mathematics at the University of Southern Mississippi.
