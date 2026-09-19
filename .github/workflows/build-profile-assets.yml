@@ -51,7 +51,13 @@ jobs:
           mkdir -p dist/cards
           cp profile-summary-card-output/github_dark/*.svg dist/cards/
 
-      # Step 5: Deploy all generated assets to the 'output' branch
+      # Step 5: Generate top repositories card
+      - name: Generate top repositories card
+        run: python3 scripts/generate_top_repos_svg.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 6: Deploy all generated assets to the 'output' branch
       - name: Deploy assets to output branch
         uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4
         with:

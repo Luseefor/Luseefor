@@ -48,6 +48,11 @@ Professionally making computers do weird things.
 | **[Automater](https://github.com/Luseefor/Automater)** | macOS desktop automation for clicking, macros, and recording | [repo](https://github.com/Luseefor/Automater) |
 | **[portfolio](https://github.com/Luseefor/portfolio)** | Personal site, including a WebGL dungeon demo | [rijan.sh](https://www.rijan.sh) |
 
+## Top Repositories
+<p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/top-repos.svg" alt="Top repositories" />
+</p>
+
 ## Core Experience
 | Capability | What It Delivers |
 | --- | --- |
