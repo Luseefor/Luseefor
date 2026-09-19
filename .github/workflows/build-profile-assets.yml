@@ -45,6 +45,9 @@ jobs:
           THEME: github_dark
           AUTO_PUSH: false
 
+      - name: Fix dist permissions
+        run: sudo chown -R $(whoami):$(whoami) dist
+
       # Step 4: Move generated cards into the deploy directory
       - name: Stage summary cards
         run: |
