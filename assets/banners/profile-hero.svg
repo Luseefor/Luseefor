@@ -1,88 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" fill="none" role="img" aria-labelledby="title desc">
   <title id="title">Luseefor profile hero banner</title>
-  <desc id="desc">Premium dark hero banner for Luseefor — Software Engineer.</desc>
-  <defs>
-    <radialGradient id="bgAurora" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 60) rotate(90) scale(220 420)">
-      <stop stop-color="#58A6FF" stop-opacity="0.22"/>
-      <stop offset="0.5" stop-color="#00B8D9" stop-opacity="0.08"/>
-      <stop offset="1" stop-color="#0B1321" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="bgAurora2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(200 240) rotate(90) scale(160 360)">
-      <stop stop-color="#00B8D9" stop-opacity="0.14"/>
-      <stop offset="1" stop-color="#0B1321" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="panel" x1="60" y1="60" x2="1140" y2="220" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#111C2E" stop-opacity="0.72"/>
-      <stop offset="1" stop-color="#0D1524" stop-opacity="0.42"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="60" y1="40" x2="1140" y2="40" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#58A6FF" stop-opacity="0"/>
-      <stop offset="0.15" stop-color="#58A6FF" stop-opacity="0.6"/>
-      <stop offset="0.85" stop-color="#00B8D9" stop-opacity="0.6"/>
-      <stop offset="1" stop-color="#00B8D9" stop-opacity="0"/>
-    </linearGradient>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-    <clipPath id="panelClip">
-      <rect x="60" y="40" width="1080" height="200" rx="28"/>
-    </clipPath>
-  </defs>
+  <desc id="desc">Minimal typographic hero banner for Luseefor — Software Engineer.</desc>
 
-  <!-- Base background -->
-  <rect width="1200" height="280" fill="#0B1321"/>
-  <rect width="1200" height="280" fill="url(#bgAurora)"/>
-  <rect width="1200" height="280" fill="url(#bgAurora2)"/>
+  <!-- Base -->
+  <rect width="1200" height="280" fill="#0A1220"/>
 
-  <!-- Subtle grid texture -->
-  <g clip-path="url(#panelClip)" opacity="0.16">
-    <g stroke="#2D4059" stroke-width="1">
-      <path d="M60 80H1140"/>
-      <path d="M60 120H1140"/>
-      <path d="M60 160H1140"/>
-      <path d="M60 200H1140"/>
-      <path d="M60 240H1140"/>
-      <path d="M120 40V240"/>
-      <path d="M240 40V240"/>
-      <path d="M360 40V240"/>
-      <path d="M480 40V240"/>
-      <path d="M600 40V240"/>
-      <path d="M720 40V240"/>
-      <path d="M840 40V240"/>
-      <path d="M960 40V240"/>
-      <path d="M1080 40V240"/>
-    </g>
-  </g>
+  <!-- Top rule -->
+  <rect x="80" y="56" width="1040" height="1" fill="#152238"/>
 
-  <!-- Frosted glass panel -->
-  <rect x="60" y="40" width="1080" height="200" rx="28" fill="url(#panel)" stroke="#1F2F47" stroke-width="1.5"/>
+  <!-- Accent bar -->
+  <rect x="80" y="76" width="3" height="128" rx="1.5" fill="#58A6FF"/>
 
-  <!-- Top accent glow line -->
-  <rect x="60" y="40" width="1080" height="1.5" rx="0.75" fill="url(#accent)" opacity="0.9"/>
-
-  <!-- Main wordmark -->
-  <text x="110" y="124" fill="#EAF2FB" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="58" font-weight="800" letter-spacing="-0.03em">Luseefor</text>
+  <!-- Wordmark -->
+  <text x="110" y="142" fill="#F0F5FA" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-0.04em">Luseefor</text>
 
   <!-- Role -->
-  <text x="112" y="160" fill="#8AB8FF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="20" font-weight="500">Software Engineer</text>
+  <text x="112" y="178" fill="#7A9CC6" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="500" letter-spacing="0.02em">Software Engineer</text>
 
-  <!-- Tagline chip -->
-  <rect x="110" y="176" width="360" height="34" rx="10" fill="#0D1729" stroke="#2A4368"/>
-  <text x="128" y="198" fill="#C8D7EA" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">AI-native tools · interactive systems · macOS</text>
-
-  <!-- Right-side orbital constellation -->
-  <g transform="translate(940, 140)">
-    <circle r="78" stroke="#1C3A5E" stroke-width="1.2" fill="none" opacity="0.55"/>
-    <circle r="56" stroke="#264D7A" stroke-width="1.2" fill="none" opacity="0.5"/>
-    <circle r="34" stroke="#3668A3" stroke-width="1.2" fill="none" opacity="0.45"/>
-    <circle r="12" fill="#0D1729" stroke="#58A6FF" stroke-width="2.5"/>
-    <circle r="5" fill="#58A6FF" filter="url(#softGlow)"/>
-    <circle cx="62" cy="-32" r="5" fill="#00B8D9"/>
-    <circle cx="-50" cy="42" r="5" fill="#7EA8E6"/>
-    <circle cx="48" cy="52" r="4" fill="#58A6FF"/>
-    <path d="M0 0L62 -32" stroke="#2A5585" stroke-width="1.2" stroke-linecap="round"/>
-    <path d="M0 0L-50 42" stroke="#2A5585" stroke-width="1.2" stroke-linecap="round"/>
-    <path d="M0 0L48 52" stroke="#2A5585" stroke-width="1.2" stroke-linecap="round"/>
-  </g>
+  <!-- Bottom rule -->
+  <rect x="80" y="223" width="1040" height="1" fill="#152238"/>
 </svg>
