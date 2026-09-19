@@ -3,8 +3,9 @@
 </p>
 
 <h1 align="center">Luseefor</h1>
-<p align="center"><strong>Founder Engineer</strong></p>
-<p align="center">Designing and shipping AI-native products with production-grade reliability.</p>
+<p align="center"><strong>Software Engineer</strong></p>
+<p align="center">AI systems, interactive tools, and native macOS apps.</p>
+<p align="center">Dual B.S. Computer Engineering and Mathematics · University of Southern Mississippi</p>
 
 <p align="center">
   <a href="https://github.com/Luseefor">
@@ -25,7 +26,7 @@
 </p>
 
 ## About
-I build product systems that move fast without breaking at scale. My work combines founder-level ownership, pragmatic architecture, and developer-first execution.
+I build product systems that move fast without breaking at scale. My work combines end-to-end ownership, pragmatic architecture, and developer-first execution.
 
 <p align="left"><sub>Focused on durable systems, fast iteration loops, and measurable product impact.</sub></p>
 
