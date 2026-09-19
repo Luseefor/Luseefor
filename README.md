@@ -112,3 +112,9 @@ flowchart LR
 
 ## Let's talk
 If you're working on something interesting — or just want to chat about math visualization, macOS dev, or AI tooling — reach out at [contact@rijan.sh](mailto:contact@rijan.sh) or on [LinkedIn](https://www.linkedin.com/in/rijan-ghimire-37ba4a2b0/).
+
+<p align="center">
+  <a href="mailto:contact@rijan.sh"><img src="./assets/cards/email-card.svg" alt="Email contact@rijan.sh" height="90"/></a>
+  &nbsp;&nbsp;
+  <a href="https://www.rijan.sh"><img src="./assets/cards/website-card.svg" alt="Website rijan.sh" height="90"/></a>
+</p>
