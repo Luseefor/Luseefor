@@ -1,0 +1,68 @@
+name: Update profile
+
+on:
+  schedule:
+    - cron: "23 12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - scripts/update_profile.py
+      - tests/**
+      - .github/workflows/update-profile.yml
+  pull_request:
+    paths:
+      - README.md
+      - scripts/update_profile.py
+      - tests/**
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Check profile generator
+        run: python3 -m unittest discover -s tests -v
+
+  refresh:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Refresh public work
+        run: python3 scripts/update_profile.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit changed content
+        env:
+          GIT_AUTHOR_NAME: Luseefor
+          GIT_AUTHOR_EMAIL: sapanakosansar18@gmail.com
+          GIT_COMMITTER_NAME: Luseefor
+          GIT_COMMITTER_EMAIL: sapanakosansar18@gmail.com
+        run: |
+          if git diff --quiet -- README.md; then
+            exit 0
+          fi
+          for identity in "$(git var GIT_AUTHOR_IDENT)" "$(git var GIT_COMMITTER_IDENT)"; do
+            case "$identity" in
+              'Luseefor <sapanakosansar18@gmail.com>'*) ;;
+              *) echo "Unexpected Git identity"; exit 1 ;;
+            esac
+          done
+          git add README.md
+          git commit -m "chore: refresh recent public work [skip ci]"
+          git push origin HEAD:main
