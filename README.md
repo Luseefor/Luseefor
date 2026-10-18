@@ -1,125 +1,95 @@
-<p align="center">
-  <img src="./assets/banners/profile-hero.svg" alt="Luseefor profile hero banner" width="100%" />
-</p>
+<!-- portrait:start -->
+<!-- portrait:end -->
 
-<h1 align="center">Luseefor</h1>
-<p align="center"><strong>Software Engineer</strong></p>
-<p align="center">AI systems, interactive tools, and native macOS apps.</p>
-<p align="center">Dual B.S. Computer Engineering and Mathematics · University of Southern Mississippi</p>
-
-<p align="center"><sub>Open to internships and early-career software engineering roles.</sub></p>
+<h1 align="center">Rijan Ghimire</h1>
 
 <p align="center">
-  <a href="https://github.com/Luseefor">
-    <img src="https://img.shields.io/badge/GitHub-Luseefor-1B2538?style=flat-square&logo=github&logoColor=8CC7FF&labelColor=0D1117" alt="GitHub profile link" />
-  </a>
-  <a href="https://www.linkedin.com/in/rijan-ghimire-37ba4a2b0/">
-    <img src="https://img.shields.io/badge/LinkedIn-Rijan-1B2538?style=flat-square&logo=linkedin&logoColor=8CC7FF&labelColor=0D1117" alt="LinkedIn profile link" />
-  </a>
-  <a href="https://www.instagram.com/luseefor_">
-    <img src="https://img.shields.io/badge/Instagram-luseefor_-1B2538?style=flat-square&logo=instagram&logoColor=8CC7FF&labelColor=0D1117" alt="Instagram profile link" />
-  </a>
-  <a href="https://www.rijan.sh">
-    <img src="https://img.shields.io/badge/Portfolio-rijan.sh-1B2538?style=flat-square&logo=googlechrome&logoColor=8CC7FF&labelColor=0D1117" alt="Portfolio link" />
-  </a>
-  <a href="mailto:contact@rijan.sh">
-    <img src="https://img.shields.io/badge/Email-contact%40rijan.sh-1B2538?style=flat-square&logo=gmail&logoColor=8CC7FF&labelColor=0D1117" alt="Email link" />
-  </a>
+  <strong>Software engineer</strong><br />
+  Mathematical software, developer tools, and native macOS apps.
 </p>
 
-## About
-Hi, I'm Rijan. I'm a Computer Engineering and Mathematics student who writes software. Lately that's meant turning abstract math into explorable 2D/3D visualizations ([vinculum](https://github.com/Luseefor/vinculum)), building a cross-platform component system ([Synthex UI](https://github.com/Luseefor/synthex-ui)), and making macOS apps that stay out of your way ([LumaWall](https://github.com/Luseefor/LumaWall), [Automater](https://github.com/Luseefor/Automater)).
-
-Professionally making computers do weird things.
-
-## Now
-- Finishing my dual B.S. in Computer Engineering and Mathematics at the University of Southern Mississippi.
-- Making [vinculum](https://vinculum.rijan.sh) easier for students to use for math and physics.
-- Looking for an internship where I can work on real products with real users.
-
-## Selected Work
-
-| Project | What it is | Try it |
-| --- | --- | --- |
-| **[vinculum](https://github.com/Luseefor/vinculum)** | Interactive 2D/3D math visualization for implicit surfaces, planes, and parametric curves | [vinculum.rijan.sh](https://vinculum.rijan.sh) |
-| **[Synthex UI](https://github.com/Luseefor/synthex-ui)** | Cross-platform component library, theme system, and workbench engine | [synthex-ui.rijan.sh](https://synthex-ui.rijan.sh) |
-| **[LumaWall](https://github.com/Luseefor/LumaWall)** | Live video wallpapers for macOS, from files already on your disk | [repo](https://github.com/Luseefor/LumaWall) |
-| **[alove](https://github.com/Luseefor/alove)** | Web LaTeX workspace: Next.js editor, Docker TeX Live compile worker | [repo](https://github.com/Luseefor/alove) |
-| **[Automater](https://github.com/Luseefor/Automater)** | macOS desktop automation for clicking, macros, and recording | [repo](https://github.com/Luseefor/Automater) |
-| **[portfolio](https://github.com/Luseefor/portfolio)** | Personal site, including a WebGL dungeon demo | [rijan.sh](https://www.rijan.sh) |
-
-## Top Repositories
 <p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/top-repos.svg" alt="Top repositories" />
+  <a href="https://www.rijan.sh">Website</a> ·
+  <a href="https://www.linkedin.com/in/rijan-ghimire-37ba4a2b0/">LinkedIn</a> ·
+  <a href="mailto:contact@rijan.sh">Email</a>
 </p>
 
-## Core Experience
-| Capability | What It Delivers |
-| --- | --- |
-| `0->1 Delivery` | MVP to production with clean ownership and clear milestones |
-| `Platform Strategy` | Faster releases, stronger reliability, and safer operations |
-| `System Architecture` | Maintainable services that scale with product demand |
-| `Engineering Leadership` | High-trust execution across product and infrastructure workstreams |
+Currently building **[Vinculum](https://vinculum.rijan.sh)**, a local-first math editor, and **[Synthex UI](https://synthex-ui.rijan.sh)**, a component library and layout engine. I also build native macOS tools. Studying Computer Engineering and Mathematics at [Southern Miss](https://www.usm.edu/).
 
-## Focus
-| Area | Direction |
-| --- | --- |
-| Product | `AI-native features that solve real workflow problems` |
-| Platform | `Scalable backend foundations with reliable delivery` |
-| Developer Experience | `Tooling and interfaces that reduce friction for teams` |
-| Base | `Remote` |
+## Projects
 
-## Selected Stack (System View)
-```mermaid
-flowchart LR
-    Product["Product Experience"] --> Services["Service Layer<br/>TypeScript + Python"]
-    Services --> Data["Data Layer<br/>PostgreSQL + SQL"]
-    Services --> Runtime["Runtime<br/>Node.js"]
-    Runtime --> Container["Containerization<br/>Docker"]
-    Container --> CI["CI/CD<br/>GitHub Actions"]
-    CI --> Deploy["Deployment<br/>Vercel"]
-    CI --> Observe["Observability<br/>Logs + Metrics + Traces"]
-
-    classDef node fill:#111C2E,stroke:#2F4A68,color:#C9D1D9;
-    classDef root fill:#0D1117,stroke:#58A6FF,color:#C9D1D9;
-    class Product root;
-    class Services,Data,Runtime,Container,CI,Deploy,Observe node;
-```
-
-| Layer | Stack |
-| --- | --- |
-| Core Languages | `TypeScript`, `Python`, `SQL` |
-| Runtime and Infra | `Node.js`, `Docker`, `PostgreSQL` |
-| Delivery and Operations | `GitHub Actions`, `Vercel`, `Observability workflows` |
-| Engineering Priorities | `Clarity`, `Fast iteration`, `Reliability`, `Maintainability` |
-
-## GitHub Performance
-<p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/cards/0-profile-details.svg" alt="GitHub profile details card" />
-</p>
-<table width="100%" cellspacing="0" cellpadding="0">
+<table>
   <tr>
-    <td width="50%">
-      <img width="100%" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/cards/4-productive-time.svg" alt="Productive time card" />
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Luseefor/vinculum">Vinculum</a></h3>
+      <p>A local-first mathematics editor. Plot equations, curves, surfaces, and vector fields in 2D and 3D; save projects locally or share scenes by URL.</p>
+      <p><sub>TypeScript · Rust / WebAssembly · Three.js</sub></p>
+      <p><a href="https://vinculum.rijan.sh">Open editor</a> · <a href="https://github.com/Luseefor/vinculum">Source</a></p>
     </td>
-    <td width="50%">
-      <img width="100%" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/cards/1-repos-per-language.svg" alt="Repos per language card" />
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Luseefor/synthex-ui">Synthex UI</a></h3>
+      <p>Components and themes for web and native apps. A separate layout engine handles dockable panels, commands, serialization, and history.</p>
+      <p><sub>TypeScript · React · React Native</sub></p>
+      <p><a href="https://synthex-ui.rijan.sh">Docs & preview</a> · <a href="https://github.com/Luseefor/synthex-ui">Source</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Luseefor/alove">alove</a></h3>
+      <p>A self-hosted LaTeX workspace with a browser editor and PDF preview. Compile with TeX Live in Docker; write locally without an account.</p>
+      <p><sub>Next.js · CodeMirror · Docker · TeX Live</sub></p>
+      <p><a href="https://github.com/Luseefor/alove">Source & setup</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Luseefor/LumaWall">LumaWall</a></h3>
+      <p>Video wallpapers from local files on macOS. Supports multiple displays, scheduled playlists, and playback rules for battery use and Reduce Motion.</p>
+      <p><sub>Swift · macOS · WallpaperKit</sub></p>
+      <p><a href="https://github.com/Luseefor/LumaWall">Source & build instructions</a></p>
     </td>
   </tr>
 </table>
 
-## Contribution Snake
+[All repositories](https://github.com/Luseefor?tab=repositories) · [Automater](https://github.com/Luseefor/Automater) · [Portfolio source](https://github.com/Luseefor/portfolio)
+
+## Working with
+
+| Area | Tools |
+| :--- | :--- |
+| Languages | TypeScript, Python, Swift, Rust, SQL |
+| Applications | React, Next.js, Node.js, React Native, macOS |
+| Graphics & computing | Three.js, WebAssembly, 2D/3D visualization |
+| Data & delivery | PostgreSQL, Docker, GitHub Actions, Vercel |
+
+## Contributions
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake.svg" />
-  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake.svg" />
+  <img alt="Snake animation tracing my GitHub contributions" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake.svg" width="100%" />
 </picture>
 
-## Let's talk
-If you're working on something interesting — or just want to chat about math visualization, macOS dev, or AI tooling — reach out at [contact@rijan.sh](mailto:contact@rijan.sh) or on [LinkedIn](https://www.linkedin.com/in/rijan-ghimire-37ba4a2b0/).
+<details>
+<summary>Recent merged work and releases</summary>
+
+<!-- recent-work:start -->
+- <a href="https://github.com/Luseefor/vinculum/pull/12">Promote reviewed v0.5.1 changes to production</a><br />
+  <sub>2026-10-17 · Luseefor/vinculum #12</sub>
+
+- <a href="https://github.com/Luseefor/vinculum/pull/11">Improve 2D/3D graph workflows, dark theme and dependency safety</a><br />
+  <sub>2026-10-17 · Luseefor/vinculum #11</sub>
+
+- <a href="https://github.com/arpan404/ace/pull/903">Split daemon Store by storage responsibility</a><br />
+  <sub>2026-10-17 · arpan404/ace #903</sub>
+
+- <a href="https://github.com/arpan404/ace/pull/901">Preserve live status views and use the post-flush replay head</a><br />
+  <sub>2026-10-17 · arpan404/ace #901</sub>
+<!-- recent-work:end -->
+
+<sub>Updated daily from public GitHub activity.</sub>
+
+</details>
 
 <p align="center">
-  <a href="mailto:contact@rijan.sh"><img src="./assets/cards/email-card.svg" alt="Email contact@rijan.sh" height="90"/></a>
-  &nbsp;&nbsp;
-  <a href="https://www.rijan.sh"><img src="./assets/cards/website-card.svg" alt="Website rijan.sh" height="90"/></a>
+  For project questions, open an issue or reach me at<br />
+  <a href="mailto:contact@rijan.sh">contact@rijan.sh</a>.
 </p>
