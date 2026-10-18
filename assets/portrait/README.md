@@ -1,19 +1,29 @@
 # Add the portrait
 
-Put a closely cropped, clear photo here as `source.png`, `source.jpg`,
-`source.jpeg`, or `source.webp`. Keep only one source file.
+`source.png` (cropped, face-isolated, metadata-free) plus `hair-mask.png`
+are bundled here on purpose: the daily workflow regenerates the portrait
+deterministically from exactly these files, so scheduled runs reproduce the
+same output without the original photograph. The full original photo is never
+committed and is not needed after this crop is made.
 
-The profile workflow converts it into a portrait made entirely from letters,
-numbers, and spaces. It creates light and dark SVGs plus `portrait.txt`, then
-inserts the picture above the name in the profile README. SVG keeps the characters
-sharp and scales the whole portrait on phones.
+- To use a NEW photo: replace `source.png` with a close face crop and
+  replace `hair-mask.png` with a matching white-on-black hair mask of the
+  SAME pixel dimensions (or delete the mask to fall back to the automatic
+  top-dark hair rule). A dimension mismatch fails the build on purpose —
+  never ship a mask drawn for a different crop.
+- The workflow converts the source into light/dark PNGs, typing GIFs that
+  play once from blank and hold the final portrait, plus `portrait.txt`,
+  then inserts the picture above the name in the profile README.
+  `prefers-reduced-motion` viewers get the static PNG.
 
-To generate it locally without keeping the source photo in this repository:
+To generate locally:
 
 ```sh
 python3 -m pip install -r scripts/requirements.txt
 python3 scripts/generate_portrait.py /path/to/photo.jpg
 ```
 
-Commit the generated SVGs, `portrait.txt`, and the updated root README. Until a
-photo is supplied, the profile displays its regular header without a placeholder.
+Giving an explicit photo stores a metadata-stripped copy as `source.png`.
+Commit `source.png`, `hair-mask.png`, the generated PNGs/GIFs/`portrait.txt`,
+and the updated root README. Until a photo is supplied, the profile displays
+its regular header without a placeholder.

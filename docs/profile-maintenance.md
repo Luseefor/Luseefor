@@ -50,10 +50,19 @@ To change featured projects, edit the README grid. Add a repository name to
 
 ## Code portrait
 
-Add a photo as `assets/portrait/source.png` (also supports `.jpg`, `.jpeg`, or
-`.webp`). Keep only one source file. On the next refresh, the workflow converts it
-into `portrait-dark.svg`, `portrait-light.svg`, and `portrait.txt`, then inserts it
-above the name. Without a source photo, it leaves the header unchanged.
+`assets/portrait/source.png` (cropped, face-isolated, metadata-free) and
+`assets/portrait/hair-mask.png` (same dimensions) are committed so the daily
+refresh regenerates the portrait deterministically. The full original photo
+is never committed and is not needed. To change the portrait subject, replace
+both files together; a mask drawn for a different crop fails the build.
+
+On refresh the workflow converts the source into `portrait-dark.png`,
+`portrait-light.png`, `portrait-dark.gif`, `portrait-light.gif`, and
+`portrait.txt`, then inserts the typing reveal above the name. The GIF plays
+once from blank and holds the final portrait; `prefers-reduced-motion`
+viewers are served the static PNG via `<picture>` media queries (no JS).
+GitHub caches raw media aggressively, so after publishing, a hard/refresh
+load may be needed to see a new GIF; no replay-on-every-visit is promised.
 
 To generate locally without publishing the original photograph:
 
@@ -61,8 +70,10 @@ To generate locally without publishing the original photograph:
 python3 scripts/generate_portrait.py /path/to/photo.jpg
 ```
 
-Use a close crop of the face with a simple background. `--columns 120` increases
-the detail; the default is 96. Generated portraits use only letters, numbers, and
-spaces, preserve the photo's proportions, and scale as one image on mobile.
-After conversion, commit the generated assets and root README. The original photo
-does not need to be committed.
+The supplied photo is stored back stripped of metadata (`source.png`). Use a
+close crop of the face with a simple background. `--columns 80` is the default;
+64 reads larger at small widths, 100 keeps more detail. Generated portraits use
+only letters, numbers, and spaces, use the measured IBM Plex Mono cell
+(`assets/fonts/`) so the rendered proportions match the photo, and scale as
+one image on mobile. After conversion, commit the source, mask, generated
+assets, and root README.

@@ -1,0 +1,2 @@
+# Right padding is part of the fixed-width portrait character grid.
+assets/portrait/portrait.txt -whitespace
