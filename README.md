@@ -1,8 +1,11 @@
+<!-- portrait:start -->
+<!-- portrait:end -->
+
 <h1 align="center">Rijan Ghimire</h1>
 
 <p align="center">
   <strong>Software engineer</strong><br />
-  Mathematical software, developer tools, and macOS applications.
+  Mathematical software, developer tools, and native macOS apps.
 </p>
 
 <p align="center">
@@ -11,7 +14,7 @@
   <a href="mailto:contact@rijan.sh">Email</a>
 </p>
 
-I'm building [Vinculum](https://vinculum.rijan.sh), a mathematical editor with a Rust/WASM computation core and interactive 2D/3D graphics, and [Synthex UI](https://synthex-ui.rijan.sh), a component library and layout engine for web and native interfaces. Studying Computer Engineering and Mathematics at the University of Southern Mississippi.
+Currently building **[Vinculum](https://vinculum.rijan.sh)**, a local-first math editor, and **[Synthex UI](https://synthex-ui.rijan.sh)**, a component library and layout engine. I also build native macOS tools. Studying Computer Engineering and Mathematics at [Southern Miss](https://www.usm.edu/).
 
 ## Projects
 
@@ -48,7 +51,25 @@ I'm building [Vinculum](https://vinculum.rijan.sh), a mathematical editor with a
 
 [All repositories](https://github.com/Luseefor?tab=repositories) · [Automater](https://github.com/Luseefor/Automater) · [Portfolio source](https://github.com/Luseefor/portfolio)
 
-## Recent work
+## Working with
+
+| Area | Tools |
+| :--- | :--- |
+| Languages | TypeScript, Python, Swift, Rust, SQL |
+| Applications | React, Next.js, Node.js, React Native, macOS |
+| Graphics & computing | Three.js, WebAssembly, 2D/3D visualization |
+| Data & delivery | PostgreSQL, Docker, GitHub Actions, Vercel |
+
+## Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake.svg" />
+  <img alt="Snake animation tracing my GitHub contributions" src="https://raw.githubusercontent.com/Luseefor/Luseefor/output/github-snake.svg" width="100%" />
+</picture>
+
+<details>
+<summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
 - <a href="https://github.com/Luseefor/vinculum/pull/12">Promote reviewed v0.5.1 changes to production</a><br />
@@ -66,13 +87,9 @@ I'm building [Vinculum](https://vinculum.rijan.sh), a mathematical editor with a
 
 <sub>Updated daily from public GitHub activity.</sub>
 
-## Working with
-
-| Languages | Applications | Tools |
-| :--- | :--- | :--- |
-| TypeScript, Python, Swift, Rust, SQL | React, Next.js, Node.js, macOS | Docker, PostgreSQL, GitHub Actions |
+</details>
 
 <p align="center">
-  Open to internships and early-career software engineering roles.<br />
-  <a href="mailto:contact@rijan.sh">contact@rijan.sh</a>
+  For project questions, open an issue or reach me at<br />
+  <a href="mailto:contact@rijan.sh">contact@rijan.sh</a>.
 </p>
