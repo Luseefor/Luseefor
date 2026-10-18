@@ -347,6 +347,30 @@ class DualToneIsolatedFaceTests(unittest.TestCase):
                     list(reloaded.get_flattened_data()), list(src.get_flattened_data()))
 
 
+class InPlaceSourceTests(unittest.TestCase):
+    def test_explicit_existing_source_is_stripped_before_generation(self):
+        from PIL import PngImagePlugin
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output = root / "assets" / "portrait"
+            output.mkdir(parents=True)
+            source = output / "source.png"
+            image = Image.new("RGB", (40, 40), "gray")
+            metadata = PngImagePlugin.PngInfo()
+            metadata.add_text("Author", "private metadata")
+            image.save(source, pnginfo=metadata)
+            (root / "README.md").write_text(portrait.START + "\n" + portrait.END)
+            with patch.object(portrait, "ROOT", root), patch(
+                "sys.argv", ["generate_portrait.py", str(source), "--columns", "32"]
+            ):
+                portrait.main()
+            with Image.open(source) as cleaned:
+                self.assertEqual(cleaned.info, {})
+                self.assertEqual(cleaned.tobytes(), image.tobytes())
+            self.assertFalse((output / ".source.png.tmp").exists())
+
+
 class RenderPortraitTests(unittest.TestCase):
     def test_render_portrait_exists(self):
         self.assertTrue(

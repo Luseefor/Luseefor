@@ -273,10 +273,12 @@ def _strip_and_store_source(photo: Path, directory: Path) -> Path:
         else:
             image = image.convert("RGB")
         fresh = Image.frombytes(image.mode, image.size, image.tobytes())
-        target = directory / "source.png"
-        directory.mkdir(parents=True, exist_ok=True)
-        fresh.save(target)
-        return target
+    target = directory / "source.png"
+    directory.mkdir(parents=True, exist_ok=True)
+    temporary = directory / ".source.png.tmp"
+    fresh.save(temporary, format="PNG")
+    temporary.replace(target)
+    return target
 
 
 def main() -> None:
@@ -296,9 +298,7 @@ def main() -> None:
             return
         photo = sources[0]
     else:
-        target = directory / "source.png"
-        if photo.resolve() != target.resolve():
-            photo = _strip_and_store_source(photo, directory)
+        photo = _strip_and_store_source(photo, directory)
     with Image.open(photo) as image:
         image = ImageOps.exif_transpose(image)
         mask_path = directory / "hair-mask.png"
