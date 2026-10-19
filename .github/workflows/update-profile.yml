@@ -2,13 +2,16 @@ name: Update profile
 
 on:
   schedule:
-    - cron: "23 12 * * *"
+    - cron: "23 7 * * *"
+      timezone: America/Chicago
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - README.md
       - scripts/update_profile.py
+      - scripts/rank_projects.py
+      - profile-projects.json
       - scripts/generate_portrait.py
       - scripts/requirements.txt
       - assets/portrait/**
@@ -19,6 +22,8 @@ on:
     paths:
       - README.md
       - scripts/update_profile.py
+      - scripts/rank_projects.py
+      - profile-projects.json
       - scripts/generate_portrait.py
       - scripts/requirements.txt
       - assets/portrait/**
@@ -50,7 +55,7 @@ jobs:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: test
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     permissions:
       contents: write
     steps:
@@ -61,7 +66,7 @@ jobs:
       - run: python3 -m pip install -r scripts/requirements.txt
       - name: Generate portrait if a photo is present
         run: python3 scripts/generate_portrait.py
-      - name: Refresh public work
+      - name: Refresh featured projects and public work
         run: python3 scripts/update_profile.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -72,7 +77,7 @@ jobs:
           GIT_COMMITTER_NAME: Luseefor
           GIT_COMMITTER_EMAIL: sapanakosansar18@gmail.com
         run: |
-          git add README.md assets/portrait
+          git add README.md assets/portrait data/project-ranking.json
           if git diff --cached --quiet; then
             exit 0
           fi

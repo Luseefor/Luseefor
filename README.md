@@ -5,7 +5,7 @@
     <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/portrait/portrait-light.png" />
     <source media="(prefers-color-scheme: dark)" srcset="./assets/portrait/portrait-dark.gif" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/portrait/portrait-light.gif" />
-    <img src="./assets/portrait/portrait-light.png" alt="Rijan Ghimire ASCII portrait, typed from letters and numbers" width="320" />
+    <img src="./assets/portrait/portrait-light.png" alt="Rijan Ghimire ASCII portrait, typed from letters and numbers" width="180" />
   </picture>
 </p>
 <!-- portrait:end -->
@@ -13,61 +13,37 @@
 <h1 align="center">Rijan Ghimire</h1>
 
 <p align="center">
-  <strong>Software engineer</strong><br />
-  Mathematical software, developer tools, and native macOS apps.
-</p>
-
-<p align="center">
+  Software engineer building mathematical software, developer tools, and macOS apps.<br />
   <a href="https://www.rijan.sh">Website</a> ·
   <a href="https://www.linkedin.com/in/rijan-ghimire-37ba4a2b0/">LinkedIn</a> ·
   <a href="mailto:contact@rijan.sh">Email</a>
 </p>
 
-Currently building **[Vinculum](https://vinculum.rijan.sh)**, a local-first math editor, and **[Synthex UI](https://synthex-ui.rijan.sh)**, a component library and layout engine. I also build native macOS tools. Studying Computer Engineering and Mathematics at [Southern Miss](https://www.usm.edu/).
+I study Computer Engineering and Mathematics at [Southern Miss](https://www.usm.edu/).
 
-## Projects
+## Selected work
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Luseefor/vinculum">Vinculum</a></h3>
-      <p>A local-first mathematics editor. Plot equations, curves, surfaces, and vector fields in 2D and 3D; save projects locally or share scenes by URL.</p>
-      <p><sub>TypeScript · Rust / WebAssembly · Three.js</sub></p>
-      <p><a href="https://vinculum.rijan.sh">Open editor</a> · <a href="https://github.com/Luseefor/vinculum">Source</a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Luseefor/synthex-ui">Synthex UI</a></h3>
-      <p>Components and themes for web and native apps. A separate layout engine handles dockable panels, commands, serialization, and history.</p>
-      <p><sub>TypeScript · React · React Native</sub></p>
-      <p><a href="https://synthex-ui.rijan.sh">Docs & preview</a> · <a href="https://github.com/Luseefor/synthex-ui">Source</a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Luseefor/alove">alove</a></h3>
-      <p>A self-hosted LaTeX workspace with a browser editor and PDF preview. Compile with TeX Live in Docker; write locally without an account.</p>
-      <p><sub>Next.js · CodeMirror · Docker · TeX Live</sub></p>
-      <p><a href="https://github.com/Luseefor/alove">Source & setup</a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Luseefor/LumaWall">LumaWall</a></h3>
-      <p>Video wallpapers from local files on macOS. Supports multiple displays, scheduled playlists, and playback rules for battery use and Reduce Motion.</p>
-      <p><sub>Swift · macOS · WallpaperKit</sub></p>
-      <p><a href="https://github.com/Luseefor/LumaWall">Source & build instructions</a></p>
-    </td>
-  </tr>
-</table>
+<!-- projects:start -->
+<h3><a href="https://github.com/Luseefor/vinculum">Vinculum</a></h3>
 
-[All repositories](https://github.com/Luseefor?tab=repositories) · [Automater](https://github.com/Luseefor/Automater) · [Portfolio source](https://github.com/Luseefor/portfolio)
+<p>A local-first math editor for equations, curves, surfaces, and vector fields in 2D and 3D. Save work in your browser or share a scene by URL.</p>
 
-## Working with
+<a href="https://vinculum.rijan.sh">Website</a> · <a href="https://github.com/Luseefor/vinculum">Source & documentation</a>
 
-| Area | Tools |
-| :--- | :--- |
-| Languages | TypeScript, Python, Swift, Rust, SQL |
-| Applications | React, Next.js, Node.js, React Native, macOS |
-| Graphics & computing | Three.js, WebAssembly, 2D/3D visualization |
-| Data & delivery | PostgreSQL, Docker, GitHub Actions, Vercel |
+<h3><a href="https://github.com/Luseefor/LumaWall">LumaWall</a></h3>
+
+<p>Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.</p>
+
+<a href="https://github.com/Luseefor/LumaWall">Source & documentation</a>
+
+<h3><a href="https://github.com/Luseefor/faredelta">FareDelta</a></h3>
+
+<p>Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.</p>
+
+<a href="https://faredelta.rijan.sh">Website</a> · <a href="https://github.com/Luseefor/faredelta">Source & documentation</a>
+<!-- projects:end -->
+
+[All repositories](https://github.com/Luseefor?tab=repositories)
 
 ## Contributions
 
@@ -81,6 +57,9 @@ Currently building **[Vinculum](https://vinculum.rijan.sh)**, a local-first math
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
+- <a href="https://github.com/Luseefor/Automater/pull/3">Add Tandem automation panels, reliable playback and clipboard tools</a><br />
+  <sub>2026-10-19 · Luseefor/Automater #3</sub>
+
 - <a href="https://github.com/Luseefor/vinculum/pull/12">Promote reviewed v0.5.1 changes to production</a><br />
   <sub>2026-10-17 · Luseefor/vinculum #12</sub>
 
@@ -89,16 +68,8 @@ Currently building **[Vinculum](https://vinculum.rijan.sh)**, a local-first math
 
 - <a href="https://github.com/arpan404/ace/pull/903">Split daemon Store by storage responsibility</a><br />
   <sub>2026-10-17 · arpan404/ace #903</sub>
-
-- <a href="https://github.com/arpan404/ace/pull/901">Preserve live status views and use the post-flush replay head</a><br />
-  <sub>2026-10-17 · arpan404/ace #901</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
 
 </details>
-
-<p align="center">
-  For project questions, open an issue or reach me at<br />
-  <a href="mailto:contact@rijan.sh">contact@rijan.sh</a>.
-</p>

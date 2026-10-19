@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "name": "vinculum",
+      "title": "Vinculum",
+      "sha": "fa56232361a53b003219fcd562d11cbe76c74105",
+      "source_lines": 52289,
+      "readme_signals": {
+        "purpose": true,
+        "setup": true,
+        "usage": true,
+        "internals": true,
+        "verification": true,
+        "license": true
+      },
+      "readme_points": 60,
+      "score": 97.75,
+      "description": "A local-first math editor for equations, curves, surfaces, and vector fields in 2D and 3D. Save work in your browser or share a scene by URL.",
+      "language": "TypeScript",
+      "homepage": "https://vinculum.rijan.sh",
+      "pushed_at": "2026-10-17T16:29:23Z",
+      "eligible": true
+    },
+    {
+      "name": "LumaWall",
+      "title": "LumaWall",
+      "sha": "bf6c79beca4d98016a203a38edd966dc0115041d",
+      "source_lines": 13074,
+      "readme_signals": {
+        "purpose": true,
+        "setup": true,
+        "usage": true,
+        "internals": true,
+        "verification": true,
+        "license": true
+      },
+      "readme_points": 60,
+      "score": 92.93,
+      "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
+      "language": "Swift",
+      "homepage": "",
+      "pushed_at": "2026-09-19T16:17:30Z",
+      "eligible": true
+    },
+    {
+      "name": "faredelta",
+      "title": "FareDelta",
+      "sha": "6a88a5e0561d520f2f00ad143800489f997a1b23",
+      "source_lines": 8940,
+      "readme_signals": {
+        "purpose": true,
+        "setup": true,
+        "usage": true,
+        "internals": true,
+        "verification": true,
+        "license": false
+      },
+      "readme_points": 50,
+      "score": 81.61,
+      "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
+      "language": "TypeScript",
+      "homepage": "https://faredelta.rijan.sh",
+      "pushed_at": "2026-10-16T09:55:41Z",
+      "eligible": true
+    },
+    {
+      "name": "PuzzleTrack",
+      "title": "PuzzleTrack",
+      "sha": "ce277fef2588a603bd88afac1af24e6000467ed5",
+      "source_lines": 7432,
+      "readme_signals": {
+        "purpose": true,
+        "setup": true,
+        "usage": true,
+        "internals": false,
+        "verification": true,
+        "license": false
+      },
+      "readme_points": 40,
+      "score": 70.97,
+      "description": "A local chess endgame research pilot with reproducible puzzle assignments, timed decisions, and exportable study records.",
+      "language": "TypeScript",
+      "homepage": "",
+      "pushed_at": "2026-10-03T03:47:07Z",
+      "eligible": true
+    },
+    {
+      "name": "alove",
+      "title": "alove",
+      "sha": "e02b59f5868f9ebcb6adc1ae605d7f0c50d7a952",
+      "source_lines": 3648,
+      "readme_signals": {
+        "purpose": true,
+        "setup": true,
+        "usage": true,
+        "internals": false,
+        "verification": false,
+        "license": true
+      },
+      "readme_points": 40,
+      "score": 68.5,
+      "description": "A self-hosted LaTeX workspace with a browser editor, Docker-based TeX Live compilation, and PDF preview. The default local mode needs no account.",
+      "language": "TypeScript",
+      "homepage": "",
+      "pushed_at": "2026-08-28T01:29:32Z",
+      "eligible": false
+    },
+    {
+      "name": "Automater",
+      "title": "Automater",
+      "sha": "920225947ac600c3a2d6ddd24d735bdfd4df660b",
+      "source_lines": 7792,
+      "readme_signals": {
+        "purpose": true,
+        "setup": false,
+        "usage": false,
+        "internals": false,
+        "verification": true,
+        "license": true
+      },
+      "readme_points": 30,
+      "score": 61.13,
+      "description": "A macOS desktop automation app for clicking, recording, and replaying macros.",
+      "language": "Swift",
+      "homepage": "",
+      "pushed_at": "2026-10-19T05:38:45Z",
+      "eligible": false
+    }
+  ]
+}

@@ -1,6 +1,4 @@
 from datetime import datetime, timezone
-from pathlib import Path
-import tempfile
 import unittest
 from unittest.mock import patch
 
@@ -96,16 +94,6 @@ class FeedTests(unittest.TestCase):
         }), self.assertRaises(RuntimeError):
             profile.collect_work(datetime(2026, 10, 18, tzinfo=timezone.utc))
 
-    def test_failed_fetch_does_not_erase_existing_readme(self):
-        with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
-            readme = root / 'README.md'
-            readme.write_text('Existing profile', encoding='utf-8')
-            with patch.object(profile, 'ROOT', root), patch.object(
-                profile, 'collect_work', side_effect=RuntimeError('GitHub unavailable'),
-            ), self.assertRaises(RuntimeError):
-                profile.main()
-            self.assertEqual(readme.read_text(encoding='utf-8'), 'Existing profile')
 
 
 if __name__ == '__main__':

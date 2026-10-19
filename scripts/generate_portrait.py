@@ -256,7 +256,7 @@ def insert_portrait(readme: str) -> str:
     <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="./assets/portrait/portrait-light.png" />
     <source media="(prefers-color-scheme: dark)" srcset="./assets/portrait/portrait-dark.gif" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/portrait/portrait-light.gif" />
-    <img src="./assets/portrait/portrait-light.png" alt="Rijan Ghimire ASCII portrait, typed from letters and numbers" width="320" />
+    <img src="./assets/portrait/portrait-light.png" alt="Rijan Ghimire ASCII portrait, typed from letters and numbers" width="180" />
   </picture>
 </p>
 '''
