@@ -4,7 +4,7 @@
     {
       "name": "vinculum",
       "title": "Vinculum",
-      "sha": "fa56232361a53b003219fcd562d11cbe76c74105",
+      "sha": "b5161fc3a07c5357a7ae6693b49102195f4c8437",
       "source_lines": 52289,
       "readme_signals": {
         "purpose": true,
@@ -19,13 +19,13 @@
       "description": "A local-first math editor for equations, curves, surfaces, and vector fields in 2D and 3D. Save work in your browser or share a scene by URL.",
       "language": "TypeScript",
       "homepage": "https://vinculum.rijan.sh",
-      "pushed_at": "2026-10-17T16:29:23Z",
+      "pushed_at": "2026-10-19T12:52:41Z",
       "eligible": true
     },
     {
       "name": "LumaWall",
       "title": "LumaWall",
-      "sha": "bf6c79beca4d98016a203a38edd966dc0115041d",
+      "sha": "1639a80348b50cc7c1d382d6b58c500b30f84fef",
       "source_lines": 13074,
       "readme_signals": {
         "purpose": true,
@@ -40,13 +40,13 @@
       "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
       "language": "Swift",
       "homepage": "",
-      "pushed_at": "2026-09-19T16:17:30Z",
+      "pushed_at": "2026-10-19T12:47:14Z",
       "eligible": true
     },
     {
       "name": "faredelta",
       "title": "FareDelta",
-      "sha": "6a88a5e0561d520f2f00ad143800489f997a1b23",
+      "sha": "edbc77102da6ef0af7902393bde99af4d4f1a645",
       "source_lines": 8940,
       "readme_signals": {
         "purpose": true,
@@ -61,7 +61,28 @@
       "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
       "language": "TypeScript",
       "homepage": "https://faredelta.rijan.sh",
-      "pushed_at": "2026-10-16T09:55:41Z",
+      "pushed_at": "2026-10-19T12:47:11Z",
+      "eligible": true
+    },
+    {
+      "name": "Automater",
+      "title": "Automater",
+      "sha": "163c04eddd1b04bc9f5521b1923db5e36c148bf4",
+      "source_lines": 7792,
+      "readme_signals": {
+        "purpose": true,
+        "setup": true,
+        "usage": false,
+        "internals": false,
+        "verification": true,
+        "license": true
+      },
+      "readme_points": 40,
+      "score": 71.13,
+      "description": "A macOS desktop automation app for clicking, recording, and replaying macros.",
+      "language": "Swift",
+      "homepage": "",
+      "pushed_at": "2026-10-19T12:40:43Z",
       "eligible": true
     },
     {
@@ -104,27 +125,6 @@
       "language": "TypeScript",
       "homepage": "",
       "pushed_at": "2026-08-28T01:29:32Z",
-      "eligible": false
-    },
-    {
-      "name": "Automater",
-      "title": "Automater",
-      "sha": "920225947ac600c3a2d6ddd24d735bdfd4df660b",
-      "source_lines": 7792,
-      "readme_signals": {
-        "purpose": true,
-        "setup": false,
-        "usage": false,
-        "internals": false,
-        "verification": true,
-        "license": true
-      },
-      "readme_points": 30,
-      "score": 61.13,
-      "description": "A macOS desktop automation app for clicking, recording, and replaying macros.",
-      "language": "Swift",
-      "homepage": "",
-      "pushed_at": "2026-10-19T05:38:45Z",
       "eligible": false
     }
   ]
