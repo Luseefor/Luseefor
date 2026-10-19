@@ -1,6 +1,6 @@
 {
   "featured_count": 3,
-  "minimum_source_lines": 5000,
+  "minimum_source_lines": 500,
   "minimum_readme_points": 40,
   "exclude": {
     "Luseefor": "Profile infrastructure, not a product.",

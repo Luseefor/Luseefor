@@ -1,7 +1,7 @@
 # Profile and repository review
 
 Reviewed 2026-10-19 against current public source. Ranking uses documentation
-and size signals from the generator, not a professional review of code quality.
+and public delivery signals from the generator, not a professional review of code quality.
 The live, inspectable results are in [the ranking snapshot](../data/project-ranking.json).
 
 ## Chosen direction
@@ -69,3 +69,21 @@ For future projects, supply an accurate repository description and homepage,
 document setup/usage/internals/verification/license, and push working source to
 the default branch. The next successful morning refresh evaluates them without
 editing the profile's project list by hand.
+
+## Evidence-focused profile refinement
+
+Source size no longer earns ranking points. The morning selection scores README
+structure, a public entry point, published stable releases and recent maintenance;
+500 authored source lines is only an eligibility floor. A linked site is not
+presented as a tested demo. Documentation-only PRs no longer fill the activity feed.
+The engineering section names a real decision: bounded Rust/WASM sampling while
+preserving the existing saved-scene format. It makes no unmeasured speed, adoption,
+team-leadership or usage claims.
+
+The sidebar bio and pinned repositories are account settings maintained separately
+from this README. Keep them consistent with the current selected work. Suggested bio:
+
+> Software engineer building mathematical software, developer tools, and macOS apps. Studying Computer Engineering and Mathematics at Southern Miss.
+
+Suggested pins are the same three projects as Selected work; remove the older
+Synthex UI and portfolio pins. Repository automation does not control account pins.

@@ -25,18 +25,25 @@ Up to three eligible projects appear, sorted by:
 - **Documentation: 60 points.** Ten points each for purpose prose, setup commands,
   usage/features, internals/architecture, verification commands, and a license
   section in the root README. More words do not earn more points.
-- **Source size: 40 points.** `min(40, 8 × log10(1 + source_lines))`, saturating at
-  100,000 lines. This is approximate nonblank authored source size, excluding
-  comment-only lines, tests, generated/bundled code, dependencies, assets and
-  showcase video code. Inline comments and language-specific syntax mean this is
-  not an exact executable LOC metric. Size is a secondary signal, not code quality.
-- Ties use source size and then the repository name, deterministically.
+- **Public entry point: 10 points.** A configured HTTP(S) project homepage.
+  This is a way to reach a project, not proof that its features work or that a
+  deployment is healthy. Native apps can earn the release points without a site.
+- **Published release: 20 points.** An existing, published GitHub release that
+  is neither a draft nor a prerelease. This records distribution evidence; it
+  does not certify binaries, signing, security or release quality.
+- **Recent maintenance: 10 points.** A repository push within the past 90 days.
+  This is a coarse maintenance signal, not a count of features or code quality.
+- Ties use documentation points and then repository name, deterministically.
 
-Eligibility requires at least **5,000 source lines**, **40 documentation points**,
-and a nonempty description. These are editorial thresholds, configurable in
-`profile-projects.json`, not an industry standard or a quality certification.
-README signals check documented structure; they do not verify whether commands,
-claims or tests work. See `docs/profile-review.md` for the human audit.
+Source size earns **zero ranking points**. Eligibility requires at least
+**500 approximate authored source lines**, **40 documentation points**, and a
+nonempty description. The lower size floor allows focused tools to compete with
+larger applications. Counts exclude comment-only lines, tests, generated/bundled
+code, dependencies, assets and showcase video code. These are editorial thresholds,
+configurable in `profile-projects.json`, not an industry standard or a quality
+certification. README signals check documented structure; they do not verify
+whether commands, claims or tests work. See `docs/profile-review.md` for the human
+audit.
 
 If a new project qualifies and outranks an existing feature, it replaces it at
 the next successful refresh. A new project with no GitHub description is not
@@ -52,9 +59,9 @@ The workflow does not edit descriptions or READMEs in other repositories.
 
 `data/project-ranking.json` records the public measurements, documentation
 signals, eligibility, score and inspected commit SHA. Unchanged SHAs reuse their
-code/README measurements, while repository descriptions and metadata refresh on
-every run. Increment `VERSION` in `scripts/rank_projects.py` whenever measurement
-rules change, invalidating the cache. Config eligibility thresholds recalculate
+code/README measurements, while repository descriptions, latest published release
+and maintenance evidence refresh on every run. Increment `VERSION` in
+`scripts/rank_projects.py` whenever measurement rules change, invalidating the cache. Config eligibility thresholds recalculate
 each run. The ranking snapshot is committed so CI can reuse it.
 
 The inspector reads archives without extracting files. Limits are 60 MiB compressed,
@@ -68,8 +75,12 @@ workflow does not silently publish a partial ranking.
 
 The feed finds public pull requests authored by `Luseefor` and merged in the past
 90 days, including contributions to other repositories. Profile repository PRs
-are excluded. It also checks published, non-prerelease releases from the currently
-selected projects. It shows the four newest items, at most two per repository.
+are excluded, along with PRs that only change documentation, media or repository
+metadata. The filter reads every changed-file page instead of guessing from PR
+titles. Functional code, build/configuration and test changes still qualify. If
+a PR reaches GitHub’s 3,000-file cap, the job fails instead of publishing from
+a truncated list. It also checks published, non-prerelease releases from the
+currently selected projects. It shows the four newest items, at most two per repository.
 
 The snake uses the public contribution calendar and is published to the `output`
 branch with separate light and dark palettes. Existing branch history is kept.

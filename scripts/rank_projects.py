@@ -4,9 +4,9 @@ from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor
 from html import escape
+from datetime import datetime, timedelta, timezone
 import io
 import json
-import math
 from pathlib import Path, PurePosixPath
 import re
 import tarfile
@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 from scripts.update_profile import USERNAME, github
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = 1
+VERSION = 2
 START = '<!-- projects:start -->'
 END = '<!-- projects:end -->'
 MAX_ARCHIVE = 60 * 1024 * 1024
@@ -146,13 +146,40 @@ def plain(text: str, limit: int = 240) -> str:
     return text
 
 
-def score(measurement: dict) -> float:
-    # Size saturates at 100k source lines; doubling a large repo buys few points.
-    size_points = min(40, 8 * math.log10(1 + measurement['source_lines']))
-    return round(measurement['readme_points'] + size_points, 2)
+def score(measurement: dict, evidence: dict | None = None) -> float:
+    """Documentation plus public delivery signals; source size buys no points."""
+    evidence = evidence or {}
+    return (measurement['readme_points']
+            + 10 * bool(evidence.get('public_entrypoint'))
+            + 20 * bool(evidence.get('stable_release'))
+            + 10 * bool(evidence.get('recent_maintenance')))
 
 
-def collect_projects(config: dict, previous: dict | None = None) -> list[dict]:
+def delivery_evidence(repo: dict, homepage: str, now: datetime) -> dict:
+    # GitHub's latest endpoint excludes drafts/prereleases. A 404 means no release;
+    # authentication, rate-limit and transport failures must abort publication.
+    try:
+        release = github(f'repos/{USERNAME}/{quote(repo["name"], safe="")}/releases/latest')
+    except HTTPError as error:
+        if error.code != 404:
+            raise
+        release = {}
+    stable = bool(release.get('published_at') and not release.get('draft')
+                  and not release.get('prerelease'))
+    pushed = repo.get('pushed_at') or ''
+    try:
+        date = datetime.fromisoformat(pushed.replace('Z', '+00:00'))
+        recent = now - timedelta(days=90) <= date <= now
+    except (ValueError, TypeError):
+        recent = False
+    return {'public_entrypoint': bool(homepage), 'stable_release': stable,
+            'release_url': (release.get('html_url') or '') if stable else '',
+            'recent_maintenance': recent}
+
+
+def collect_projects(config: dict, previous: dict | None = None,
+                     now: datetime | None = None) -> list[dict]:
+    now = now or datetime.now(timezone.utc)
     cached = {p['name']: p for p in (previous or {}).get('projects', [])}
     cache_valid = (previous or {}).get('version') == VERSION
     excluded = {name.lower() for name in config['exclude']}
@@ -182,23 +209,27 @@ def collect_projects(config: dict, previous: dict | None = None) -> list[dict]:
             measurement = inspect_archive(download_archive(name, sha))
         override = config.get('projects', {}).get(name, {})
         description = plain(override.get('description') or repo.get('description') or '')
-        homepage = override.get('homepage', repo.get('homepage') or '')
+        homepage = override.get('homepage', repo.get('homepage') or '') or ''
+        if not isinstance(homepage, str):
+            homepage = ''
         parsed = urlsplit(homepage)
         if parsed.scheme not in {'http', 'https'} or not parsed.netloc or parsed.username or parsed.password:
             homepage = ''
+        eligible = (bool(description) and measurement['source_lines'] >= config['minimum_source_lines']
+                    and measurement['readme_points'] >= config['minimum_readme_points'])
+        evidence = delivery_evidence(repo, homepage, now) if eligible else {}
         return {
             'name': name, 'title': plain(override.get('title') or name, 80), 'sha': sha,
-            **measurement, 'score': score(measurement),
+            **measurement, 'evidence': evidence, 'score': score(measurement, evidence),
             'description': description, 'language': repo.get('language') or '',
             'homepage': homepage, 'pushed_at': repo.get('pushed_at') or '',
-            'eligible': bool(description) and measurement['source_lines'] >= config['minimum_source_lines']
-                        and measurement['readme_points'] >= config['minimum_readme_points'],
+            'eligible': eligible,
         }
 
     # All results must succeed before anything is published. No partial ranking.
     with ThreadPoolExecutor(max_workers=3) as pool:
         projects = [p for p in pool.map(inspect, candidates) if p is not None]
-    return sorted(projects, key=lambda p: (-p['score'], -p['source_lines'], p['name'].lower()))
+    return sorted(projects, key=lambda p: (-p['score'], -p['readme_points'], p['name'].lower()))
 
 
 def selected_projects(projects: list[dict], config: dict) -> list[dict]:

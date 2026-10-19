@@ -47,7 +47,9 @@ I study Computer Engineering and Mathematics at [Southern Miss](https://www.usm.
 
 ## Engineering notes
 
-[The Rust/WASM computation boundary in Vinculum](https://github.com/Luseefor/vinculum/blob/master/docs/architecture/rust-wasm-boundary.md) — expression validation, bounded grid sampling, and keeping saved scenes compatible.
+In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded numeric programs. Grid sampling is tiled to cap each call at 2,048 samples, while saved scenes keep their existing format.
+
+[Read the Rust/WASM implementation note](https://github.com/Luseefor/vinculum/blob/master/docs/architecture/rust-wasm-boundary.md).
 
 ## Contributions
 
@@ -61,17 +63,17 @@ I study Computer Engineering and Mathematics at [Southern Miss](https://www.usm.
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/Luseefor/vinculum/pull/13">Show the editor and document the Rust/WASM boundary</a><br />
-  <sub>2026-10-19 · Luseefor/vinculum #13</sub>
+- <a href="https://github.com/Luseefor/Automater/pull/3">Add Tandem automation panels, reliable playback and clipboard tools</a><br />
+  <sub>2026-10-19 · Luseefor/Automater #3</sub>
 
-- <a href="https://github.com/Luseefor/LumaWall/pull/2">Clarify playback architecture and local-build distribution</a><br />
-  <sub>2026-10-19 · Luseefor/LumaWall #2</sub>
+- <a href="https://github.com/Luseefor/vinculum/pull/12">Promote reviewed v0.5.1 changes to production</a><br />
+  <sub>2026-10-17 · Luseefor/vinculum #12</sub>
 
-- <a href="https://github.com/Luseefor/faredelta/pull/3">Show the search form and correct nearby-airport scope</a><br />
-  <sub>2026-10-19 · Luseefor/faredelta #3</sub>
+- <a href="https://github.com/Luseefor/vinculum/pull/11">Improve 2D/3D graph workflows, dark theme and dependency safety</a><br />
+  <sub>2026-10-17 · Luseefor/vinculum #11</sub>
 
-- <a href="https://github.com/Luseefor/Automater/pull/4">Rewrite Tandem README</a><br />
-  <sub>2026-10-19 · Luseefor/Automater #4</sub>
+- <a href="https://github.com/arpan404/ace/pull/903">Split daemon Store by storage responsibility</a><br />
+  <sub>2026-10-17 · arpan404/ace #903</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>

@@ -1,4 +1,6 @@
 import io
+from datetime import datetime, timezone
+from urllib.error import HTTPError
 import json
 from pathlib import Path
 import tarfile
@@ -37,6 +39,10 @@ def archive(files):
 
 
 class RankingTests(unittest.TestCase):
+    def setUp(self):
+        self.evidence = patch.object(ranking, 'delivery_evidence', return_value={}).start()
+        self.addCleanup(patch.stopall)
+
     def test_real_source_excludes_bundled_generated_tests_and_comment_only_lines(self):
         files = {
             'src/main.ts': '// comment\nconst x = 1;\n\n/* block\nmore\n*/\nrun(x);',
@@ -78,7 +84,12 @@ MIT
 '''
         self.assertTrue(all(ranking.readme_signals(text).values()))
         self.assertLess(ranking.score(measurement(1000000, 10)), ranking.score(measurement(6000, 60)))
-        self.assertEqual(ranking.score(measurement(100000000, 60)), 100)
+        self.assertEqual(ranking.score(measurement(100000000, 60)), 60)
+        self.assertEqual(ranking.score(measurement(500, 60)), ranking.score(measurement(100000000, 60)))
+        evidence = dict(public_entrypoint=True, stable_release=True, recent_maintenance=True)
+        self.assertEqual(ranking.score(measurement(500, 60), evidence), 100)
+        self.assertGreater(ranking.score(measurement(500, 50), evidence),
+                           ranking.score(measurement(100000000, 60)))
 
     def test_discovery_is_paginated_and_does_not_use_fixed_project_names(self):
         with patch.object(ranking, 'github', side_effect=[[repo(str(i)) for i in range(100)], [repo()]]):
@@ -101,6 +112,16 @@ MIT
         self.assertEqual(download.call_count, 2)
         self.assertEqual(ranking.selected_projects(ranked, dict(CONFIG, featured_count=1))[0]['name'], 'new-tomorrow')
 
+    def test_focused_new_tool_can_qualify_without_size_advantage(self):
+        with patch.object(ranking, 'inventory', return_value=[repo()]), patch.object(
+            ranking, 'github', return_value={'sha': 'a' * 40},
+        ), patch.object(ranking, 'download_archive', return_value=b''), patch.object(
+            ranking, 'inspect_archive', return_value=measurement(600, 60),
+        ):
+            ranked = ranking.collect_projects(dict(CONFIG, minimum_source_lines=500))
+        self.assertTrue(ranked[0]['eligible'])
+        self.assertEqual(ranked[0]['score'], 60)
+
     def test_size_alone_does_not_make_undocumented_project_eligible(self):
         with patch.object(ranking, 'inventory', return_value=[repo()]), patch.object(
             ranking, 'github', return_value={'sha': 'a' * 40},
@@ -117,6 +138,7 @@ MIT
             result = ranking.collect_projects(CONFIG, old)
         download.assert_not_called()
         self.assertEqual(result[0]['description'], 'Updated description')
+        self.evidence.assert_called_once()
 
     def test_changed_head_or_scoring_version_reinspects_code(self):
         old = {'version': ranking.VERSION, 'projects': [dict(name='new-project', sha='a'*40, **measurement())]}
@@ -171,6 +193,54 @@ MIT
                 profile.main()
             self.assertEqual(readme.read_text(), content)
             self.assertEqual(old.read_text(), '{"version": 1, "projects": []}')
+
+
+class DeliveryEvidenceTests(unittest.TestCase):
+    NOW = datetime(2026, 10, 19, 12, tzinfo=timezone.utc)
+
+    def test_null_or_invalid_homepage_override_earns_no_entrypoint_points(self):
+        for homepage in (None, 3, {}, ''):
+            config = dict(CONFIG, projects={'new-project': {'homepage': homepage}})
+            with patch.object(ranking, 'inventory', return_value=[repo()]), patch.object(
+                ranking, 'github', side_effect=lambda path: {'sha': 'a' * 40} if '/commits/' in path else {},
+            ), patch.object(ranking, 'download_archive', return_value=b''), patch.object(
+                ranking, 'inspect_archive', return_value=measurement(),
+            ):
+                project = ranking.collect_projects(config, now=self.NOW)[0]
+            self.assertEqual(project['homepage'], '')
+            self.assertFalse(project['evidence']['public_entrypoint'])
+
+    def test_stable_release_and_recent_maintenance_are_inspectable(self):
+        release = {'published_at': '2026-10-18T00:00:00Z', 'draft': False,
+                   'prerelease': False, 'html_url': 'https://github.com/Luseefor/new-project/releases/tag/v1'}
+        with patch.object(ranking, 'github', return_value=release) as api:
+            evidence = ranking.delivery_evidence(repo(), 'https://example.com', self.NOW)
+        api.assert_called_once_with('repos/Luseefor/new-project/releases/latest')
+        self.assertTrue(evidence['stable_release'])
+        self.assertTrue(evidence['recent_maintenance'])
+        self.assertTrue(evidence['public_entrypoint'])
+        self.assertEqual(evidence['release_url'], release['html_url'])
+
+    def test_no_release_is_normal_but_api_failure_aborts(self):
+        for status in (404, 403, 429, 500):
+            error = HTTPError('https://api.github.com', status, 'failure', {}, io.BytesIO())
+            self.addCleanup(error.close)
+            with patch.object(ranking, 'github', side_effect=error):
+                if status == 404:
+                    evidence = ranking.delivery_evidence(repo(pushed_at='2025-01-01T00:00:00Z'), '', self.NOW)
+                    self.assertFalse(evidence['stable_release'])
+                    self.assertFalse(evidence['recent_maintenance'])
+                else:
+                    with self.assertRaises(HTTPError):
+                        ranking.delivery_evidence(repo(), '', self.NOW)
+
+    def test_draft_prerelease_future_and_invalid_dates_buy_no_points(self):
+        for release in ({'draft': True}, {'prerelease': True}, {}):
+            for pushed in ('2026-10-20T00:00:00Z', 'not a date', '2026-10-19'):
+                with patch.object(ranking, 'github', return_value=release):
+                    evidence = ranking.delivery_evidence(repo(pushed_at=pushed), '', self.NOW)
+                self.assertFalse(evidence['stable_release'])
+                self.assertFalse(evidence['recent_maintenance'])
 
 
 if __name__ == '__main__':

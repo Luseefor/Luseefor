@@ -18,6 +18,29 @@ USERNAME = "Luseefor"
 PROJECTS = ("vinculum", "LumaWall", "faredelta")
 START = "<!-- recent-work:start -->"
 END = "<!-- recent-work:end -->"
+MAX_FEED_ITEMS = 4
+MAX_PER_REPO = 2
+
+# Extensions that are documentation or media on their own. Anything else
+# defaults to substantive so unknown source/config/build/test paths are kept.
+_MEDIA_EXTENSIONS = (
+    ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".svg", ".ico", ".webp",
+    ".avif", ".heic", ".heif", ".tif", ".tiff", ".psd", ".ai", ".sketch",
+    ".fig", ".blend", ".exr", ".mp4", ".mov", ".webm", ".mkv", ".mp3",
+    ".wav", ".ogg", ".flac", ".m4a", ".mpg", ".mpeg", ".avi", ".woff",
+    ".woff2", ".ttf", ".otf", ".eot", ".pdf",
+)
+_DOC_EXTENSIONS = (".md", ".mdx", ".rst", ".adoc")
+_DOC_DIRS = {"docs", "documentation", "wiki", "man"}
+_METADATA_BASENAMES = {
+    ".gitignore", ".gitattributes", ".editorconfig",
+    ".mailmap", ".gitkeep", ".git-blame-ignore-revs", "codeowners",
+    "funding.yml", "funding.json",
+}
+_METADATA_STEMS = {
+    "license", "licence", "notice", "authors", "contributing",
+    "code_of_conduct", "codeofconduct", "security", "changelog",
+}
 
 
 def github(path: str):
@@ -33,13 +56,99 @@ def github(path: str):
         return json.load(response)
 
 
+def is_non_substantive_path(filename: str) -> bool:
+    """True for documentation/media/metadata-only paths; titles are ignored.
+
+    Anything unrecognised defaults to substantive so code, config, build
+    and test changes are never dropped because of an unknown extension.
+    A pull request titled ``docs: fix`` that touches real code is therefore
+    kept, while a ``feature``-titled README rewrite is skipped.
+    """
+    lower = filename.lower()
+    basename = lower.rsplit("/", 1)[-1]
+    parts = lower.split("/")
+    if lower.endswith(_MEDIA_EXTENSIONS):
+        return True
+    if lower.endswith(_DOC_EXTENSIONS):
+        return True
+    if any(part in _DOC_DIRS for part in parts[:-1]):
+        return True
+    if lower.startswith(".github/"):
+        if lower.startswith(".github/workflows/"):
+            return False
+        if "issue_template" in lower or "pull_request_template" in lower:
+            return True
+        if lower.endswith(".md"):
+            return True
+        if basename in _METADATA_BASENAMES:
+            return True
+        return False
+    if basename in _METADATA_BASENAMES:
+        return True
+    stem = basename.split(".", 1)[0]
+    if stem in _METADATA_STEMS and (
+        "." not in basename or basename.endswith((".md", ".markdown", ".txt", ".rst", ".adoc"))
+    ):
+        return True
+    return False
+
+
+def has_substantive_change(files: list[dict]) -> bool:
+    """True when at least one changed file is code/config/build/test."""
+    substantive = False
+    for entry in files:
+        filename = entry.get("filename")
+        if not isinstance(filename, str) or not filename:
+            raise RuntimeError("Unexpected pull-request files response; keeping the existing feed.")
+        previous = entry.get("previous_filename")
+        if previous is not None and (not isinstance(previous, str) or not previous):
+            raise RuntimeError("Unexpected pull-request rename; keeping the existing feed.")
+        if not is_non_substantive_path(filename) or (previous and not is_non_substantive_path(previous)):
+            substantive = True
+    return substantive
+
+
+def pull_request_files(repo: str, number: int) -> list[dict]:
+    """Fetch every changed-file entry for one pull request, paginated."""
+    files: list[dict] = []
+    page = 1
+    while True:
+        batch = github(f"repos/{repo}/pulls/{number}/files?per_page=100&page={page}")
+        if not isinstance(batch, list):
+            raise RuntimeError("Unexpected pull-request files response; keeping the existing feed.")
+        files.extend(batch)
+        # GitHub caps this endpoint at 3,000 files. At the cap we cannot tell
+        # whether an unreturned source change exists, so keep the old feed.
+        if len(files) >= 3000:
+            raise RuntimeError("Pull-request files reached GitHub's 3,000-file cap; keeping the existing feed.")
+        if len(batch) < 100:
+            return files
+        page += 1
+
+
+def _feed_selection(work: list[dict]) -> list[dict]:
+    """Mirror render_work's newest-first, max-2-per-repo, max-4 selection."""
+    selected = []
+    seen = set()
+    per_repo: Counter = Counter()
+    for item in sorted(work, key=lambda item: item["date"], reverse=True):
+        if item["url"] in seen or per_repo[item["repo"]] >= MAX_PER_REPO:
+            continue
+        seen.add(item["url"])
+        per_repo[item["repo"]] += 1
+        selected.append(item)
+        if len(selected) == MAX_FEED_ITEMS:
+            break
+    return selected
+
+
 def collect_work(now: datetime, projects: tuple[str, ...] | None = None) -> list[dict]:
     since = (now - timedelta(days=90)).date().isoformat()
     query = (
         f"is:pr is:merged is:public author:{USERNAME} merged:>={since} "
         f"-repo:{USERNAME}/{USERNAME}"
     )
-    work = []
+    candidates = []
     page = 1
     while True:
         result = github("search/issues?" + urlencode({
@@ -54,14 +163,18 @@ def collect_work(now: datetime, projects: tuple[str, ...] | None = None) -> list
             if not merged_at or item["user"]["login"].lower() != USERNAME.lower():
                 continue
             repo = item["repository_url"].removeprefix("https://api.github.com/repos/")
-            work.append({
+            candidates.append({
                 "date": merged_at, "repo": repo, "url": item["html_url"],
                 "title": item["title"], "label": f"{repo} #{item['number']}",
+                "number": item["number"],
             })
         if page * 100 >= result["total_count"]:
             break
         page += 1
+    # Newest merged first so file inspection can stop once the feed is full.
+    candidates.sort(key=lambda item: item["date"], reverse=True)
 
+    releases = []
     for name in PROJECTS if projects is None else projects:
         repo = f"{USERNAME}/{name}"
         for release in github(f"repos/{repo}/releases?per_page=5"):
@@ -70,12 +183,35 @@ def collect_work(now: datetime, projects: tuple[str, ...] | None = None) -> list
                 continue
             if published[:10] < since:
                 continue
-            work.append({
+            releases.append({
                 "date": published, "repo": repo, "url": release["html_url"],
                 "title": f"Released {name} {release['tag_name']}",
                 "label": f"{repo} · release",
             })
-    return work
+
+    substantive: list[dict] = []
+    for index, candidate in enumerate(candidates):
+        # A repo that already has two newer feed items cannot take another;
+        # skip its older PRs without spending a files request. Any exception
+        # below propagates so the workflow keeps the existing README.
+        newer_same_repo = sum(
+            1 for item in substantive + releases
+            if item["repo"] == candidate["repo"] and item["date"] >= candidate["date"]
+        )
+        if newer_same_repo >= MAX_PER_REPO:
+            continue
+        files = pull_request_files(candidate["repo"], candidate["number"])
+        if not has_substantive_change(files):
+            continue
+        substantive.append({key: candidate[key] for key in ("date", "repo", "url", "title", "label")})
+        selected = _feed_selection(substantive + releases)
+        if len(selected) == MAX_FEED_ITEMS and index + 1 < len(candidates):
+            # Remaining candidates are older than everything selected so far
+            # only when the oldest selected item is strictly newer; equal
+            # timestamps keep scanning to stay deterministic.
+            if selected[-1]["date"] > candidates[index + 1]["date"]:
+                break
+    return substantive + releases
 
 
 def render_work(work: list[dict]) -> str:
@@ -83,7 +219,7 @@ def render_work(work: list[dict]) -> str:
     seen = set()
     per_repo: Counter = Counter()
     for item in sorted(work, key=lambda item: item["date"], reverse=True):
-        if item["url"] in seen or per_repo[item["repo"]] >= 2:
+        if item["url"] in seen or per_repo[item["repo"]] >= MAX_PER_REPO:
             continue
         if not re.fullmatch(r"https://github\.com/[\w.-]+/[\w.-]+/(pull/\d+|releases/tag/[^\s<>]+)", item["url"]):
             raise ValueError("Unexpected activity URL; keeping the existing feed.")
@@ -98,7 +234,7 @@ def render_work(work: list[dict]) -> str:
         )
         seen.add(item["url"])
         per_repo[item["repo"]] += 1
-        if len(rows) == 4:
+        if len(rows) == MAX_FEED_ITEMS:
             break
     return "\n\n".join(rows) or "Public releases and merged pull requests will appear here."
 

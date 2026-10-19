@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "projects": [
     {
       "name": "vinculum",
@@ -15,7 +15,13 @@
         "license": true
       },
       "readme_points": 60,
-      "score": 97.75,
+      "evidence": {
+        "public_entrypoint": true,
+        "stable_release": false,
+        "release_url": "",
+        "recent_maintenance": true
+      },
+      "score": 80,
       "description": "A local-first math editor for equations, curves, surfaces, and vector fields in 2D and 3D. Save work in your browser or share a scene by URL.",
       "language": "TypeScript",
       "homepage": "https://vinculum.rijan.sh",
@@ -36,7 +42,13 @@
         "license": true
       },
       "readme_points": 60,
-      "score": 92.93,
+      "evidence": {
+        "public_entrypoint": false,
+        "stable_release": false,
+        "release_url": "",
+        "recent_maintenance": true
+      },
+      "score": 70,
       "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
       "language": "Swift",
       "homepage": "",
@@ -57,7 +69,13 @@
         "license": false
       },
       "readme_points": 50,
-      "score": 81.61,
+      "evidence": {
+        "public_entrypoint": true,
+        "stable_release": false,
+        "release_url": "",
+        "recent_maintenance": true
+      },
+      "score": 70,
       "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
       "language": "TypeScript",
       "homepage": "https://faredelta.rijan.sh",
@@ -78,32 +96,17 @@
         "license": true
       },
       "readme_points": 40,
-      "score": 71.13,
+      "evidence": {
+        "public_entrypoint": false,
+        "stable_release": true,
+        "release_url": "https://github.com/Luseefor/Automater/releases/tag/v0.3.5",
+        "recent_maintenance": true
+      },
+      "score": 70,
       "description": "A macOS desktop automation app for clicking, recording, and replaying macros.",
       "language": "Swift",
       "homepage": "",
       "pushed_at": "2026-10-19T12:40:43Z",
-      "eligible": true
-    },
-    {
-      "name": "PuzzleTrack",
-      "title": "PuzzleTrack",
-      "sha": "ce277fef2588a603bd88afac1af24e6000467ed5",
-      "source_lines": 7432,
-      "readme_signals": {
-        "purpose": true,
-        "setup": true,
-        "usage": true,
-        "internals": false,
-        "verification": true,
-        "license": false
-      },
-      "readme_points": 40,
-      "score": 70.97,
-      "description": "A local chess endgame research pilot with reproducible puzzle assignments, timed decisions, and exportable study records.",
-      "language": "TypeScript",
-      "homepage": "",
-      "pushed_at": "2026-10-03T03:47:07Z",
       "eligible": true
     },
     {
@@ -120,12 +123,45 @@
         "license": true
       },
       "readme_points": 40,
-      "score": 68.5,
+      "evidence": {
+        "public_entrypoint": false,
+        "stable_release": false,
+        "release_url": "",
+        "recent_maintenance": true
+      },
+      "score": 50,
       "description": "A self-hosted LaTeX workspace with a browser editor, Docker-based TeX Live compilation, and PDF preview. The default local mode needs no account.",
       "language": "TypeScript",
       "homepage": "",
       "pushed_at": "2026-08-28T01:29:32Z",
-      "eligible": false
+      "eligible": true
+    },
+    {
+      "name": "PuzzleTrack",
+      "title": "PuzzleTrack",
+      "sha": "ce277fef2588a603bd88afac1af24e6000467ed5",
+      "source_lines": 7432,
+      "readme_signals": {
+        "purpose": true,
+        "setup": true,
+        "usage": true,
+        "internals": false,
+        "verification": true,
+        "license": false
+      },
+      "readme_points": 40,
+      "evidence": {
+        "public_entrypoint": false,
+        "stable_release": false,
+        "release_url": "",
+        "recent_maintenance": true
+      },
+      "score": 50,
+      "description": "A local chess endgame research pilot with reproducible puzzle assignments, timed decisions, and exportable study records.",
+      "language": "TypeScript",
+      "homepage": "",
+      "pushed_at": "2026-10-03T03:47:07Z",
+      "eligible": true
     }
   ]
 }
