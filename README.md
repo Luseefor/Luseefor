@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
+- <a href="https://github.com/Luseefor/LumaWall/pull/7">Sync Xcode project for DisplayTopology and 0.4.1</a><br />
+  <sub>2026-10-19 · Luseefor/LumaWall #7</sub>
+
+- <a href="https://github.com/Luseefor/LumaWall/pull/6">Review follow-ups, unslop, automation scheduling (0.4.1)</a><br />
+  <sub>2026-10-19 · Luseefor/LumaWall #6</sub>
+
 - <a href="https://github.com/Luseefor/Automater/pull/3">Add Tandem automation panels, reliable playback and clipboard tools</a><br />
   <sub>2026-10-19 · Luseefor/Automater #3</sub>
 
 - <a href="https://github.com/Luseefor/vinculum/pull/12">Promote reviewed v0.5.1 changes to production</a><br />
   <sub>2026-10-17 · Luseefor/vinculum #12</sub>
-
-- <a href="https://github.com/Luseefor/vinculum/pull/11">Improve 2D/3D graph workflows, dark theme and dependency safety</a><br />
-  <sub>2026-10-17 · Luseefor/vinculum #11</sub>
-
-- <a href="https://github.com/arpan404/ace/pull/903">Split daemon Store by storage responsibility</a><br />
-  <sub>2026-10-17 · arpan404/ace #903</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
