@@ -1,0 +1,38 @@
+{
+  "featured_count": 3,
+  "minimum_source_lines": 5000,
+  "minimum_readme_points": 40,
+  "exclude": {
+    "Luseefor": "Profile infrastructure, not a product.",
+    "synthex-ui": "Excluded from featured work at the owner's request.",
+    "portfolio": "Personal site is already linked in the introduction."
+  },
+  "projects": {
+    "vinculum": {
+      "title": "Vinculum",
+      "description": "A local-first math editor for equations, curves, surfaces, and vector fields in 2D and 3D. Save work in your browser or share a scene by URL.",
+      "homepage": "https://vinculum.rijan.sh"
+    },
+    "LumaWall": {
+      "title": "LumaWall",
+      "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
+      "homepage": ""
+    },
+    "faredelta": {
+      "title": "FareDelta",
+      "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
+      "homepage": "https://faredelta.rijan.sh"
+    },
+    "PuzzleTrack": {
+      "title": "PuzzleTrack",
+      "description": "A local chess endgame research pilot with reproducible puzzle assignments, timed decisions, and exportable study records.",
+      "homepage": ""
+    },
+    "alove": {
+      "description": "A self-hosted LaTeX workspace with a browser editor, Docker-based TeX Live compilation, and PDF preview. The default local mode needs no account."
+    },
+    "Automater": {
+      "description": "A macOS desktop automation app for clicking, recording, and replaying macros."
+    }
+  }
+}
