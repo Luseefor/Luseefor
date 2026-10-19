@@ -45,6 +45,10 @@ I study Computer Engineering and Mathematics at [Southern Miss](https://www.usm.
 
 [All repositories](https://github.com/Luseefor?tab=repositories)
 
+## Engineering notes
+
+[The Rust/WASM computation boundary in Vinculum](https://github.com/Luseefor/vinculum/blob/master/docs/architecture/rust-wasm-boundary.md) — expression validation, bounded grid sampling, and keeping saved scenes compatible.
+
 ## Contributions
 
 <picture>
