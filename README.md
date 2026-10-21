@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/Luseefor/synthex-ui/pull/61">Synthex overhaul: deps, a11y, workbench extras, registry, web UI</a><br />
-  <sub>2026-10-20 · Luseefor/synthex-ui #61</sub>
+- <a href="https://github.com/Luseefor/synthex-ui/pull/123">Fix component interaction, RTL, SSR and theme contrast contracts</a><br />
+  <sub>2026-10-21 · Luseefor/synthex-ui #123</sub>
 
-- <a href="https://github.com/Luseefor/synthex-ui/pull/60">docs: unslop readmes and guides</a><br />
-  <sub>2026-10-20 · Luseefor/synthex-ui #60</sub>
+- <a href="https://github.com/Luseefor/alove/pull/29">Fix editing reliability before expanding authoring features</a><br />
+  <sub>2026-10-21 · Luseefor/alove #29</sub>
 
-- <a href="https://github.com/Luseefor/alove/pull/23">Restore source pane scrolling for long documents</a><br />
-  <sub>2026-10-20 · Luseefor/alove #23</sub>
+- <a href="https://github.com/Luseefor/synthex-ui/pull/122">Trim copied component files and platform dependency hints</a><br />
+  <sub>2026-10-21 · Luseefor/synthex-ui #122</sub>
 
-- <a href="https://github.com/Luseefor/alove/pull/21">Make build output usable and verify the complete author journey</a><br />
-  <sub>2026-10-20 · Luseefor/alove #21</sub>
+- <a href="https://github.com/arpan404/ace/pull/1207">Expand native iPhone features and checkpoint chat reliability fixes</a><br />
+  <sub>2026-10-21 · arpan404/ace #1207</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>

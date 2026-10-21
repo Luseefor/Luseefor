@@ -106,14 +106,14 @@
       "description": "A macOS desktop automation app for clicking, recording, and replaying macros.",
       "language": "Swift",
       "homepage": "",
-      "pushed_at": "2026-10-19T12:40:43Z",
+      "pushed_at": "2026-10-21T14:37:29Z",
       "eligible": true
     },
     {
       "name": "alove",
       "title": "alove",
-      "sha": "12eaafac0bcda03f59d156dd58da37ba1c50d323",
-      "source_lines": 19354,
+      "sha": "b960662c1921f3c7de8a03b35d88a8c359e968f2",
+      "source_lines": 20636,
       "readme_signals": {
         "purpose": true,
         "setup": true,
@@ -133,7 +133,7 @@
       "description": "A self-hosted LaTeX workspace with a browser editor, Docker-based TeX Live compilation, and PDF preview. The default local mode needs no account.",
       "language": "TypeScript",
       "homepage": "",
-      "pushed_at": "2026-10-20T16:19:18Z",
+      "pushed_at": "2026-10-21T14:52:12Z",
       "eligible": true
     },
     {
