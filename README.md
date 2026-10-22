@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/Luseefor/synthex-ui/pull/123">Fix component interaction, RTL, SSR and theme contrast contracts</a><br />
-  <sub>2026-10-21 · Luseefor/synthex-ui #123</sub>
+- <a href="https://github.com/Luseefor/synthex-ui/pull/130">Fix native Sheet and Drawer interaction contracts</a><br />
+  <sub>2026-10-22 · Luseefor/synthex-ui #130</sub>
 
-- <a href="https://github.com/Luseefor/alove/pull/29">Fix editing reliability before expanding authoring features</a><br />
-  <sub>2026-10-21 · Luseefor/alove #29</sub>
+- <a href="https://github.com/Luseefor/synthex-ui/pull/131">feat(native): anchor ContextMenu, HoverCard, Tooltip and NavigationMenu</a><br />
+  <sub>2026-10-22 · Luseefor/synthex-ui #131</sub>
 
-- <a href="https://github.com/Luseefor/synthex-ui/pull/122">Trim copied component files and platform dependency hints</a><br />
-  <sub>2026-10-21 · Luseefor/synthex-ui #122</sub>
+- <a href="https://github.com/Luseefor/alove/pull/50">Add source-preserving visual tables, figures, equations and project keys</a><br />
+  <sub>2026-10-22 · Luseefor/alove #50</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/1207">Expand native iPhone features and checkpoint chat reliability fixes</a><br />
-  <sub>2026-10-21 · arpan404/ace #1207</sub>
+- <a href="https://github.com/Luseefor/alove/pull/46">Add source-preserving Manuscript visual writing and shared proof modes</a><br />
+  <sub>2026-10-22 · Luseefor/alove #46</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
