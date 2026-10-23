@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/Luseefor/synthex-ui/pull/130">Fix native Sheet and Drawer interaction contracts</a><br />
-  <sub>2026-10-22 · Luseefor/synthex-ui #130</sub>
+- <a href="https://github.com/Luseefor/alove/pull/64">Rebuild the editor as a compact professional workspace</a><br />
+  <sub>2026-10-23 · Luseefor/alove #64</sub>
 
-- <a href="https://github.com/Luseefor/synthex-ui/pull/131">feat(native): anchor ContextMenu, HoverCard, Tooltip and NavigationMenu</a><br />
-  <sub>2026-10-22 · Luseefor/synthex-ui #131</sub>
+- <a href="https://github.com/Luseefor/alove/pull/62">Add and remove subfigure panels with confirmed source edits</a><br />
+  <sub>2026-10-23 · Luseefor/alove #62</sub>
 
-- <a href="https://github.com/Luseefor/alove/pull/50">Add source-preserving visual tables, figures, equations and project keys</a><br />
-  <sub>2026-10-22 · Luseefor/alove #50</sub>
+- <a href="https://github.com/Luseefor/synthex-ui/pull/137">Release native repairs: UI 2.0.1 and CLI 1.2.1</a><br />
+  <sub>2026-10-23 · Luseefor/synthex-ui #137</sub>
 
-- <a href="https://github.com/Luseefor/alove/pull/46">Add source-preserving Manuscript visual writing and shared proof modes</a><br />
-  <sub>2026-10-22 · Luseefor/alove #46</sub>
+- <a href="https://github.com/Luseefor/synthex-ui/pull/138">Fix native resize commits and Expo safe-area layout</a><br />
+  <sub>2026-10-23 · Luseefor/synthex-ui #138</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>

@@ -112,8 +112,8 @@
     {
       "name": "alove",
       "title": "alove",
-      "sha": "12c57ffb8be68793340668a67c75336aa2bbf083",
-      "source_lines": 34296,
+      "sha": "37d43481c09df01276c3a5ea7c23de68a9129f95",
+      "source_lines": 40434,
       "readme_signals": {
         "purpose": true,
         "setup": true,
@@ -133,7 +133,7 @@
       "description": "A self-hosted LaTeX workspace with a browser editor, Docker-based TeX Live compilation, and PDF preview. The default local mode needs no account.",
       "language": "TypeScript",
       "homepage": "",
-      "pushed_at": "2026-10-22T14:23:07Z",
+      "pushed_at": "2026-10-23T16:32:03Z",
       "eligible": true
     },
     {
