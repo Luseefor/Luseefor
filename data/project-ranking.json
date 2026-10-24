@@ -31,8 +31,8 @@
     {
       "name": "LumaWall",
       "title": "LumaWall",
-      "sha": "cca2e419f13fc82bb3e9ea1f78a022431114cd50",
-      "source_lines": 13547,
+      "sha": "5c2c7eb493ba70214ea1e128150c27c7cd58c93a",
+      "source_lines": 13700,
       "readme_signals": {
         "purpose": true,
         "setup": true,
@@ -52,13 +52,13 @@
       "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
       "language": "Swift",
       "homepage": "",
-      "pushed_at": "2026-10-19T17:39:32Z",
+      "pushed_at": "2026-10-24T02:30:12Z",
       "eligible": true
     },
     {
       "name": "faredelta",
       "title": "FareDelta",
-      "sha": "edbc77102da6ef0af7902393bde99af4d4f1a645",
+      "sha": "792d0b93f5d9293584e0a99c2145af75f1157666",
       "source_lines": 8940,
       "readme_signals": {
         "purpose": true,
@@ -79,7 +79,7 @@
       "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
       "language": "TypeScript",
       "homepage": "https://faredelta.rijan.sh",
-      "pushed_at": "2026-10-19T12:47:11Z",
+      "pushed_at": "2026-10-24T09:37:05Z",
       "eligible": true
     },
     {
@@ -112,8 +112,8 @@
     {
       "name": "alove",
       "title": "alove",
-      "sha": "37d43481c09df01276c3a5ea7c23de68a9129f95",
-      "source_lines": 40434,
+      "sha": "26895144dc60190932c597040e6e5ee5cb6ff595",
+      "source_lines": 42094,
       "readme_signals": {
         "purpose": true,
         "setup": true,
@@ -124,16 +124,16 @@
       },
       "readme_points": 40,
       "evidence": {
-        "public_entrypoint": false,
+        "public_entrypoint": true,
         "stable_release": false,
         "release_url": "",
         "recent_maintenance": true
       },
-      "score": 50,
+      "score": 60,
       "description": "A self-hosted LaTeX workspace with a browser editor, Docker-based TeX Live compilation, and PDF preview. The default local mode needs no account.",
       "language": "TypeScript",
-      "homepage": "",
-      "pushed_at": "2026-10-23T16:32:03Z",
+      "homepage": "https://weftly-ebon.vercel.app",
+      "pushed_at": "2026-10-24T16:03:46Z",
       "eligible": true
     },
     {

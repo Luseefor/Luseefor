@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/Luseefor/alove/pull/64">Rebuild the editor as a compact professional workspace</a><br />
-  <sub>2026-10-23 · Luseefor/alove #64</sub>
+- <a href="https://github.com/Luseefor/alove/pull/72">Reuse GitHub sign-in for repository sync authorization</a><br />
+  <sub>2026-10-24 · Luseefor/alove #72</sub>
 
-- <a href="https://github.com/Luseefor/alove/pull/62">Add and remove subfigure panels with confirmed source edits</a><br />
-  <sub>2026-10-23 · Luseefor/alove #62</sub>
+- <a href="https://github.com/Luseefor/alove/pull/70">Fix textarea snippet selection and verify fallback editing in CI</a><br />
+  <sub>2026-10-24 · Luseefor/alove #70</sub>
+
+- <a href="https://github.com/Luseefor/LumaWall/pull/8">Protect wallpaper playback across updates</a><br />
+  <sub>2026-10-24 · Luseefor/LumaWall #8</sub>
 
 - <a href="https://github.com/Luseefor/synthex-ui/pull/137">Release native repairs: UI 2.0.1 and CLI 1.2.1</a><br />
   <sub>2026-10-23 · Luseefor/synthex-ui #137</sub>
-
-- <a href="https://github.com/Luseefor/synthex-ui/pull/138">Fix native resize commits and Expo safe-area layout</a><br />
-  <sub>2026-10-23 · Luseefor/synthex-ui #138</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
