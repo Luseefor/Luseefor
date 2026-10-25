@@ -58,7 +58,7 @@
     {
       "name": "faredelta",
       "title": "FareDelta",
-      "sha": "792d0b93f5d9293584e0a99c2145af75f1157666",
+      "sha": "a32dae9a60935203726b81cccac961d24fb2535a",
       "source_lines": 8940,
       "readme_signals": {
         "purpose": true,
@@ -79,7 +79,7 @@
       "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
       "language": "TypeScript",
       "homepage": "https://faredelta.rijan.sh",
-      "pushed_at": "2026-10-24T09:37:05Z",
+      "pushed_at": "2026-10-25T09:54:05Z",
       "eligible": true
     },
     {
@@ -112,8 +112,8 @@
     {
       "name": "alove",
       "title": "alove",
-      "sha": "26895144dc60190932c597040e6e5ee5cb6ff595",
-      "source_lines": 42094,
+      "sha": "d8428255ad8db331a12f7db2e1bf40e0853a6ef0",
+      "source_lines": 42733,
       "readme_signals": {
         "purpose": true,
         "setup": true,
@@ -133,7 +133,7 @@
       "description": "A self-hosted LaTeX workspace with a browser editor, Docker-based TeX Live compilation, and PDF preview. The default local mode needs no account.",
       "language": "TypeScript",
       "homepage": "https://weftly-ebon.vercel.app",
-      "pushed_at": "2026-10-24T16:03:46Z",
+      "pushed_at": "2026-10-25T16:19:32Z",
       "eligible": true
     },
     {

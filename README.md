@@ -63,11 +63,11 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
+- <a href="https://github.com/Luseefor/alove/pull/75">Add on-demand Vercel compilation and deploy matching Convex backends</a><br />
+  <sub>2026-10-25 · Luseefor/alove #75</sub>
+
 - <a href="https://github.com/Luseefor/alove/pull/72">Reuse GitHub sign-in for repository sync authorization</a><br />
   <sub>2026-10-24 · Luseefor/alove #72</sub>
-
-- <a href="https://github.com/Luseefor/alove/pull/70">Fix textarea snippet selection and verify fallback editing in CI</a><br />
-  <sub>2026-10-24 · Luseefor/alove #70</sub>
 
 - <a href="https://github.com/Luseefor/LumaWall/pull/8">Protect wallpaper playback across updates</a><br />
   <sub>2026-10-24 · Luseefor/LumaWall #8</sub>
