@@ -63,6 +63,9 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
+- <a href="https://github.com/arpan404/ace/pull/1447">Fix Storage scanning and add safe worktree backup and cleanup</a><br />
+  <sub>2026-10-27 · arpan404/ace #1447</sub>
+
 - <a href="https://github.com/Luseefor/alove/pull/77">Rebuild the front page and rebalance Weftly color profiles</a><br />
   <sub>2026-10-26 · Luseefor/alove #77</sub>
 
@@ -71,9 +74,6 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 
 - <a href="https://github.com/Luseefor/alove/pull/75">Add on-demand Vercel compilation and deploy matching Convex backends</a><br />
   <sub>2026-10-25 · Luseefor/alove #75</sub>
-
-- <a href="https://github.com/Luseefor/LumaWall/pull/8">Protect wallpaper playback across updates</a><br />
-  <sub>2026-10-24 · Luseefor/LumaWall #8</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
