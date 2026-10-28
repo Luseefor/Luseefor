@@ -63,6 +63,9 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
+- <a href="https://github.com/arpan404/markit/pull/1">Build Rust Markdown renderer for native iOS, Android, and WebAssembly</a><br />
+  <sub>2026-10-27 · arpan404/markit #1</sub>
+
 - <a href="https://github.com/arpan404/ace/pull/1447">Fix Storage scanning and add safe worktree backup and cleanup</a><br />
   <sub>2026-10-27 · arpan404/ace #1447</sub>
 
@@ -71,9 +74,6 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 
 - <a href="https://github.com/arpan404/ace/pull/1324">Build native Windows foundations and verify browser and screen paths</a><br />
   <sub>2026-10-26 · arpan404/ace #1324</sub>
-
-- <a href="https://github.com/Luseefor/alove/pull/75">Add on-demand Vercel compilation and deploy matching Convex backends</a><br />
-  <sub>2026-10-25 · Luseefor/alove #75</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
