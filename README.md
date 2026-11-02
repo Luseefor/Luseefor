@@ -63,11 +63,11 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/arpan404/ace/pull/1532">Improve iOS transcript snapshots and reading restoration</a><br />
-  <sub>2026-10-31 · arpan404/ace #1532</sub>
+- <a href="https://github.com/arpan404/ace/pull/1631">Fix Settings permission status and grant/revoke controls</a><br />
+  <sub>2026-11-02 · arpan404/ace #1631</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/1531">Enable devices automatically after daemon restarts</a><br />
-  <sub>2026-10-31 · arpan404/ace #1531</sub>
+- <a href="https://github.com/arpan404/ace/pull/1592">Remove Offshift</a><br />
+  <sub>2026-11-01 · arpan404/ace #1592</sub>
 
 - <a href="https://github.com/arpan404/markit/pull/1">Build Rust Markdown renderer for native iOS, Android, and WebAssembly</a><br />
   <sub>2026-10-27 · arpan404/markit #1</sub>
