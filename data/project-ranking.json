@@ -58,7 +58,7 @@
     {
       "name": "faredelta",
       "title": "FareDelta",
-      "sha": "d9a5b2e19c380521ea4aa83cf2d7654db4e47850",
+      "sha": "09c1eac0bf53b815789ddf9fe1fd42afc7fcf547",
       "source_lines": 8940,
       "readme_signals": {
         "purpose": true,
@@ -79,7 +79,7 @@
       "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
       "language": "TypeScript",
       "homepage": "https://faredelta.rijan.sh",
-      "pushed_at": "2026-11-03T12:52:25Z",
+      "pushed_at": "2026-11-04T13:04:23Z",
       "eligible": true
     },
     {
