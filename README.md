@@ -63,11 +63,11 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/arpan404/tauchstone/pull/11">S7: add exploratory single-cell web panel</a><br />
-  <sub>2026-11-06 · arpan404/tauchstone #11</sub>
+- <a href="https://github.com/arpan404/tauchstone/pull/14">MVP B1: app shell, Projects and live Screen views</a><br />
+  <sub>2026-11-07 · arpan404/tauchstone #14</sub>
 
-- <a href="https://github.com/arpan404/tauchstone/pull/9">Make expo readout legible and show available tests remaining</a><br />
-  <sub>2026-11-06 · arpan404/tauchstone #9</sub>
+- <a href="https://github.com/arpan404/tauchstone/pull/16">B3: Attack, Validation, About views</a><br />
+  <sub>2026-11-07 · arpan404/tauchstone #16</sub>
 
 - <a href="https://github.com/arpan404/ace/pull/1678">Keep project names visible and recover PR lists when ranking fails</a><br />
   <sub>2026-11-05 · arpan404/ace #1678</sub>
