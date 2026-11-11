@@ -63,11 +63,11 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
+- <a href="https://github.com/arpan404/ace/pull/1686">Add Cursor Origin and GitLab review browsing alongside GitHub</a><br />
+  <sub>2026-11-11 · arpan404/ace #1686</sub>
+
 - <a href="https://github.com/arpan404/ace/pull/1678">Keep project names visible and recover PR lists when ranking fails</a><br />
   <sub>2026-11-05 · arpan404/ace #1678</sub>
-
-- <a href="https://github.com/arpan404/ace/pull/1694">Report delegation failures and deliver remote settlements promptly</a><br />
-  <sub>2026-11-04 · arpan404/ace #1694</sub>
 
 - <a href="https://github.com/arpan404/markit/pull/1">Build Rust Markdown renderer for native iOS, Android, and WebAssembly</a><br />
   <sub>2026-10-27 · arpan404/markit #1</sub>
