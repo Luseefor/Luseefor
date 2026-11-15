@@ -63,11 +63,11 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/arpan404/ace/pull/2008">iPhone browser: engine per thread, watch mode, connection and latency</a><br />
-  <sub>2026-11-14 · arpan404/ace #2008</sub>
+- <a href="https://github.com/arpan404/ace/pull/2113">iPhone: ChipFlow lays out the same way at the width it asks for</a><br />
+  <sub>2026-11-15 · arpan404/ace #2113</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/1944">iPhone: full-size visualizations, goal progress, and maths and Mermaid in answers</a><br />
-  <sub>2026-11-14 · arpan404/ace #1944</sub>
+- <a href="https://github.com/arpan404/ace/pull/2005">iPhone: large paste as attachment, and a turn rail for long threads</a><br />
+  <sub>2026-11-15 · arpan404/ace #2005</sub>
 
 - <a href="https://github.com/arpan404/markit/pull/1">Build Rust Markdown renderer for native iOS, Android, and WebAssembly</a><br />
   <sub>2026-10-27 · arpan404/markit #1</sub>
