@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/arpan404/ace/pull/2222">iPhone: Spade as a tab, with its bots and one live conversation</a><br />
-  <sub>2026-11-17 · arpan404/ace #2222</sub>
+- <a href="https://github.com/Luseefor/LumaWall/pull/32">Open the selected wallpaper copy on the first frame</a><br />
+  <sub>2026-11-18 · Luseefor/LumaWall #32</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/2217">iPhone New thread: Effort always shows for the model</a><br />
-  <sub>2026-11-17 · arpan404/ace #2217</sub>
+- <a href="https://github.com/arpan404/ace/pull/2294">iPhone: changes and code review pages, redesigned</a><br />
+  <sub>2026-11-18 · arpan404/ace #2294</sub>
 
-- <a href="https://github.com/arpan404/markit/pull/1">Build Rust Markdown renderer for native iOS, Android, and WebAssembly</a><br />
-  <sub>2026-10-27 · arpan404/markit #1</sub>
+- <a href="https://github.com/arpan404/ace/pull/2281">iPhone Spade: answer question cards in the conversation</a><br />
+  <sub>2026-11-18 · arpan404/ace #2281</sub>
 
-- <a href="https://github.com/Luseefor/alove/pull/77">Rebuild the front page and rebalance Weftly color profiles</a><br />
-  <sub>2026-10-26 · Luseefor/alove #77</sub>
+- <a href="https://github.com/Luseefor/LumaWall/pull/29">Stop previews on lock, show posters for small previews, decode posters at card size</a><br />
+  <sub>2026-11-18 · Luseefor/LumaWall #29</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
