@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/Luseefor/LumaWall/pull/32">Open the selected wallpaper copy on the first frame</a><br />
-  <sub>2026-11-18 · Luseefor/LumaWall #32</sub>
+- <a href="https://github.com/arpan404/ace/pull/2328">iPhone: one home bar with Spade&#x27;s moving face, matching the iPad foot</a><br />
+  <sub>2026-11-19 · arpan404/ace #2328</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/2294">iPhone: changes and code review pages, redesigned</a><br />
-  <sub>2026-11-18 · arpan404/ace #2294</sub>
+- <a href="https://github.com/Luseefor/LumaWall/pull/53">fix(extension): leftovers from #45, #50 and #49</a><br />
+  <sub>2026-11-19 · Luseefor/LumaWall #53</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/2281">iPhone Spade: answer question cards in the conversation</a><br />
-  <sub>2026-11-18 · arpan404/ace #2281</sub>
+- <a href="https://github.com/Luseefor/LumaWall/pull/52">Close the leftovers from #43 and #48: tests, poster content check, bisect reply</a><br />
+  <sub>2026-11-19 · Luseefor/LumaWall #52</sub>
 
-- <a href="https://github.com/Luseefor/LumaWall/pull/29">Stop previews on lock, show posters for small previews, decode posters at card size</a><br />
-  <sub>2026-11-18 · Luseefor/LumaWall #29</sub>
+- <a href="https://github.com/arpan404/ace/pull/2325">Declutter the iPad sidebar&#x27;s foot bar and fill the empty detail pane</a><br />
+  <sub>2026-11-19 · arpan404/ace #2325</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
