@@ -30,17 +30,17 @@ I study Computer Engineering and Mathematics at [Southern Miss](https://www.usm.
 
 <a href="https://vinculum.rijan.sh">Website</a> · <a href="https://github.com/Luseefor/vinculum">Source & documentation</a>
 
-<h3><a href="https://github.com/Luseefor/LumaWall">LumaWall</a></h3>
-
-<p>Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.</p>
-
-<a href="https://github.com/Luseefor/LumaWall">Source & documentation</a>
-
 <h3><a href="https://github.com/Luseefor/faredelta">FareDelta</a></h3>
 
 <p>Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.</p>
 
 <a href="https://faredelta.rijan.sh">Website</a> · <a href="https://github.com/Luseefor/faredelta">Source & documentation</a>
+
+<h3><a href="https://github.com/Luseefor/Automater">Automater</a></h3>
+
+<p>A macOS desktop automation app for clicking, recording, and replaying macros.</p>
+
+<a href="https://github.com/Luseefor/Automater">Source & documentation</a>
 <!-- projects:end -->
 
 [All repositories](https://github.com/Luseefor?tab=repositories)
@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/arpan404/ace/pull/2328">iPhone: one home bar with Spade&#x27;s moving face, matching the iPad foot</a><br />
-  <sub>2026-11-19 · arpan404/ace #2328</sub>
+- <a href="https://github.com/Luseefor/LumaWall/pull/96">Retry busy posters, bound metadata frame rates, sweep staging with an empty library</a><br />
+  <sub>2026-11-20 · Luseefor/LumaWall #96</sub>
 
-- <a href="https://github.com/Luseefor/LumaWall/pull/53">fix(extension): leftovers from #45, #50 and #49</a><br />
-  <sub>2026-11-19 · Luseefor/LumaWall #53</sub>
+- <a href="https://github.com/Luseefor/LumaWall/pull/95">Check signing on the XPC helper and refuse a drifted project in release.sh</a><br />
+  <sub>2026-11-20 · Luseefor/LumaWall #95</sub>
 
-- <a href="https://github.com/Luseefor/LumaWall/pull/52">Close the leftovers from #43 and #48: tests, poster content check, bisect reply</a><br />
-  <sub>2026-11-19 · Luseefor/LumaWall #52</sub>
+- <a href="https://github.com/arpan404/ace/pull/2366">ios: clear stale Git lock on new-thread worktree start</a><br />
+  <sub>2026-11-20 · arpan404/ace #2366</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/2325">Declutter the iPad sidebar&#x27;s foot bar and fill the empty detail pane</a><br />
-  <sub>2026-11-19 · arpan404/ace #2325</sub>
+- <a href="https://github.com/arpan404/ace/pull/2367">Say which Antigravity CLI to install when agy is missing</a><br />
+  <sub>2026-11-20 · arpan404/ace #2367</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>

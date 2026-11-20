@@ -29,36 +29,9 @@
       "eligible": true
     },
     {
-      "name": "LumaWall",
-      "title": "LumaWall",
-      "sha": "5914bfe4cd6bca174564ecfaf88f018c1fa6af78",
-      "source_lines": 16724,
-      "readme_signals": {
-        "purpose": true,
-        "setup": true,
-        "usage": true,
-        "internals": true,
-        "verification": true,
-        "license": true
-      },
-      "readme_points": 60,
-      "evidence": {
-        "public_entrypoint": false,
-        "stable_release": false,
-        "release_url": "",
-        "recent_maintenance": true
-      },
-      "score": 70,
-      "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
-      "language": "Swift",
-      "homepage": "",
-      "pushed_at": "2026-11-19T21:19:04Z",
-      "eligible": true
-    },
-    {
       "name": "faredelta",
       "title": "FareDelta",
-      "sha": "90dfb117e2e03bce61b22c196af79856a605349c",
+      "sha": "d68cbb80855c16413fc9d127a11bba3290c6907e",
       "source_lines": 8940,
       "readme_signals": {
         "purpose": true,
@@ -79,7 +52,7 @@
       "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
       "language": "TypeScript",
       "homepage": "https://faredelta.rijan.sh",
-      "pushed_at": "2026-11-18T14:14:35Z",
+      "pushed_at": "2026-11-20T14:08:22Z",
       "eligible": true
     },
     {
@@ -134,6 +107,33 @@
       "language": "TypeScript",
       "homepage": "https://weftly-ebon.vercel.app",
       "pushed_at": "2026-10-26T05:50:01Z",
+      "eligible": true
+    },
+    {
+      "name": "LumaWall",
+      "title": "LumaWall",
+      "sha": "b3c68604f05f402207c23b62ec9002daa35c31b0",
+      "source_lines": 20491,
+      "readme_signals": {
+        "purpose": true,
+        "setup": false,
+        "usage": true,
+        "internals": true,
+        "verification": false,
+        "license": true
+      },
+      "readme_points": 40,
+      "evidence": {
+        "public_entrypoint": false,
+        "stable_release": false,
+        "release_url": "",
+        "recent_maintenance": true
+      },
+      "score": 50,
+      "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
+      "language": "Swift",
+      "homepage": "",
+      "pushed_at": "2026-11-20T17:31:34Z",
       "eligible": true
     },
     {
