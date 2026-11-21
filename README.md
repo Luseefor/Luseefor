@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/Luseefor/LumaWall/pull/96">Retry busy posters, bound metadata frame rates, sweep staging with an empty library</a><br />
-  <sub>2026-11-20 · Luseefor/LumaWall #96</sub>
+- <a href="https://github.com/arpan404/ace/pull/2493">iPhone Pulls: project and filters change the list</a><br />
+  <sub>2026-11-21 · arpan404/ace #2493</sub>
 
-- <a href="https://github.com/Luseefor/LumaWall/pull/95">Check signing on the XPC helper and refuse a drifted project in release.sh</a><br />
-  <sub>2026-11-20 · Luseefor/LumaWall #95</sub>
+- <a href="https://github.com/arpan404/ace/pull/2492">Account deletion follow-ups: race tests in the window, privacy policy, pending deletion after restart</a><br />
+  <sub>2026-11-21 · arpan404/ace #2492</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/2366">ios: clear stale Git lock on new-thread worktree start</a><br />
-  <sub>2026-11-20 · arpan404/ace #2366</sub>
+- <a href="https://github.com/Luseefor/LumaWall/pull/119">fix(core): keep store files readable while the screen is locked</a><br />
+  <sub>2026-11-21 · Luseefor/LumaWall #119</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/2367">Say which Antigravity CLI to install when agy is missing</a><br />
-  <sub>2026-11-20 · arpan404/ace #2367</sub>
+- <a href="https://github.com/Luseefor/LumaWall/pull/118">fix(site): centre the nav links with the theme switch</a><br />
+  <sub>2026-11-21 · Luseefor/LumaWall #118</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>

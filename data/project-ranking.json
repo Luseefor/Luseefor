@@ -112,8 +112,8 @@
     {
       "name": "LumaWall",
       "title": "LumaWall",
-      "sha": "b3c68604f05f402207c23b62ec9002daa35c31b0",
-      "source_lines": 20491,
+      "sha": "57b6bde407e63e11a6a308382bf964aa0b9282e8",
+      "source_lines": 24168,
       "readme_signals": {
         "purpose": true,
         "setup": false,
@@ -133,7 +133,7 @@
       "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
       "language": "Swift",
       "homepage": "",
-      "pushed_at": "2026-11-20T17:31:34Z",
+      "pushed_at": "2026-11-21T19:24:57Z",
       "eligible": true
     },
     {
