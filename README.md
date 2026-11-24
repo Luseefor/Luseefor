@@ -63,11 +63,11 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/arpan404/ace/pull/2624">iPhone bridge follow-ups from the review of #2616</a><br />
-  <sub>2026-11-22 · arpan404/ace #2624</sub>
+- <a href="https://github.com/arpan404/ace/pull/2715">iPhone Summary: keep settled delegates between visits</a><br />
+  <sub>2026-11-23 · arpan404/ace #2715</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/2622">iPhone tab bar: round New thread button, Search in the top bar, review follow-ups</a><br />
-  <sub>2026-11-22 · arpan404/ace #2622</sub>
+- <a href="https://github.com/arpan404/ace/pull/2713">Send incremental command output to the iPhone bridge</a><br />
+  <sub>2026-11-23 · arpan404/ace #2713</sub>
 
 - <a href="https://github.com/Luseefor/LumaWall/pull/124">Add a lock-screen-only layout to native mode</a><br />
   <sub>2026-11-21 · Luseefor/LumaWall #124</sub>
