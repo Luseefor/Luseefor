@@ -63,11 +63,11 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
-- <a href="https://github.com/arpan404/ace/pull/2774">iPhone: keep every loaded page, and give table prose the room</a><br />
-  <sub>2026-11-24 · arpan404/ace #2774</sub>
+- <a href="https://github.com/arpan404/ace/pull/2799">iPhone: Settings › Editor, honoured by the phone&#x27;s file editor</a><br />
+  <sub>2026-11-25 · arpan404/ace #2799</sub>
 
-- <a href="https://github.com/arpan404/ace/pull/2773">iPhone: sign Release with aps-environment so shipped builds get pushes</a><br />
-  <sub>2026-11-24 · arpan404/ace #2773</sub>
+- <a href="https://github.com/arpan404/ace/pull/2798">iPhone terminal: titles, links and colours from OSC sequences, as web handles them</a><br />
+  <sub>2026-11-25 · arpan404/ace #2798</sub>
 
 - <a href="https://github.com/Luseefor/LumaWall/pull/124">Add a lock-screen-only layout to native mode</a><br />
   <sub>2026-11-21 · Luseefor/LumaWall #124</sub>
