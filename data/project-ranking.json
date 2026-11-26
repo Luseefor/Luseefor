@@ -31,7 +31,7 @@
     {
       "name": "faredelta",
       "title": "FareDelta",
-      "sha": "64a4cb37499c50c17e0da5d2eeba92af5cf8c8e0",
+      "sha": "20b2f69a1bbe3cc70663da9d8bdc5dbcf5c3df93",
       "source_lines": 8940,
       "readme_signals": {
         "purpose": true,
@@ -52,7 +52,7 @@
       "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
       "language": "TypeScript",
       "homepage": "https://faredelta.rijan.sh",
-      "pushed_at": "2026-11-24T15:58:49Z",
+      "pushed_at": "2026-11-26T15:27:21Z",
       "eligible": true
     },
     {
@@ -133,7 +133,7 @@
       "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
       "language": "Swift",
       "homepage": "",
-      "pushed_at": "2026-11-23T02:42:39Z",
+      "pushed_at": "2026-11-26T05:19:21Z",
       "eligible": true
     },
     {
