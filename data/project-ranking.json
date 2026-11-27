@@ -31,7 +31,7 @@
     {
       "name": "faredelta",
       "title": "FareDelta",
-      "sha": "20b2f69a1bbe3cc70663da9d8bdc5dbcf5c3df93",
+      "sha": "7b34a66ccddde483b9d186d01ffa52b3b8cff98f",
       "source_lines": 8940,
       "readme_signals": {
         "purpose": true,
@@ -52,7 +52,7 @@
       "description": "Flexible-date flight search with fare history, saved routes, and price alerts, using cached fare observations.",
       "language": "TypeScript",
       "homepage": "https://faredelta.rijan.sh",
-      "pushed_at": "2026-11-26T15:27:21Z",
+      "pushed_at": "2026-11-27T15:15:23Z",
       "eligible": true
     },
     {
@@ -112,8 +112,8 @@
     {
       "name": "LumaWall",
       "title": "LumaWall",
-      "sha": "75cd3b0f9e738d1864f027578e988addd79e4eb9",
-      "source_lines": 26127,
+      "sha": "4631ddef107c1f74c7073303b27e581ebc05e850",
+      "source_lines": 25765,
       "readme_signals": {
         "purpose": true,
         "setup": false,
@@ -133,7 +133,7 @@
       "description": "Video wallpapers from local files on macOS, with per-display playback, scheduled playlists, and power-aware controls. Available to build locally.",
       "language": "Swift",
       "homepage": "",
-      "pushed_at": "2026-11-26T05:19:21Z",
+      "pushed_at": "2026-11-27T21:17:48Z",
       "eligible": true
     },
     {

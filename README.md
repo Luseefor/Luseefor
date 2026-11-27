@@ -63,17 +63,17 @@ In Vinculum, TypeScript validates expressions and Rust/WASM evaluates bounded nu
 <summary>Recent merged work and releases</summary>
 
 <!-- recent-work:start -->
+- <a href="https://github.com/Luseefor/LumaWall/pull/126">Recover imports when the media service stops answering</a><br />
+  <sub>2026-11-27 · Luseefor/LumaWall #126</sub>
+
+- <a href="https://github.com/Luseefor/LumaWall/pull/130">Bump codeql-action to 4.39.4 in one step and group its updates</a><br />
+  <sub>2026-11-27 · Luseefor/LumaWall #130</sub>
+
 - <a href="https://github.com/arpan404/ace/pull/2800">iPhone composer: @ agents, devices and apps, as web offers them</a><br />
   <sub>2026-11-26 · arpan404/ace #2800</sub>
 
 - <a href="https://github.com/arpan404/ace/pull/2779">Keep every thread read on the phone and page through it locally</a><br />
   <sub>2026-11-25 · arpan404/ace #2779</sub>
-
-- <a href="https://github.com/Luseefor/LumaWall/pull/124">Add a lock-screen-only layout to native mode</a><br />
-  <sub>2026-11-21 · Luseefor/LumaWall #124</sub>
-
-- <a href="https://github.com/Luseefor/LumaWall/pull/122">Show playback state, reason and copy per display</a><br />
-  <sub>2026-11-21 · Luseefor/LumaWall #122</sub>
 <!-- recent-work:end -->
 
 <sub>Updated daily from public GitHub activity.</sub>
